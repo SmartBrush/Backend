@@ -4,6 +4,7 @@ import com.smartbrush.smartbrush_backend.code.ErrorCode;
 import com.smartbrush.smartbrush_backend.dto.Auth.AuthRequestDTO;
 import com.smartbrush.smartbrush_backend.dto.Auth.AuthResponseDTO;
 import com.smartbrush.smartbrush_backend.entity.AuthEntity;
+import com.smartbrush.smartbrush_backend.exception.GlobalException;
 import com.smartbrush.smartbrush_backend.exception.UserNotFoundException;
 import com.smartbrush.smartbrush_backend.jwt.JwtProvider;
 import com.smartbrush.smartbrush_backend.repository.AuthRepository;
@@ -22,11 +23,11 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public AuthResponseDTO.SignupResult signup(AuthRequestDTO.Signup request) {
         if (authRepository.existsByEmail(request.getEmail())) {
-            throw new IllegalArgumentException("이미 존재하는 이메일입니다.");
+            throw new GlobalException(ErrorCode.EMAIL_ALREADY_EXISTS);
         }
 
         if (!request.getPassword().equals(request.getPasswordCheck())) {
-            throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
+            throw new GlobalException(ErrorCode.PASSWORD_MISMATCH);
         }
 
         AuthEntity auth = authRepository.save(AuthEntity.builder()
@@ -41,10 +42,10 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public AuthResponseDTO.LoginResult login(AuthRequestDTO.Login request) {
         AuthEntity auth = authRepository.findByEmail(request.getEmail())
-                .orElseThrow(() -> new UserNotFoundException(ErrorCode.USER_NOT_FOUND));
+                .orElseThrow(() -> new GlobalException(ErrorCode.USER_NOT_FOUND));
 
         if (!passwordEncoder.matches(request.getPassword(), auth.getPassword())) {
-            throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
+            throw new GlobalException(ErrorCode.INVALID_PASSWORD);
         }
 
         String token = jwtProvider.createToken(auth.getEmail());
