@@ -1,0 +1,60 @@
+package com.smartbrush.smartbrush_backend.jwt;
+
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
+import org.springframework.security.core.Authentication;
+
+
+import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.stereotype.Component;
+
+import javax.crypto.SecretKey;
+import java.util.Date;
+import java.security.Key;
+
+@Component
+public class JwtProvider {
+
+    private final SecretKey key = Keys.hmacShaKeyFor("mysmartbrushjwtsecretkey1234567890".getBytes());
+    private final long tokenValidity = 1000L * 60 * 60; // 1시간
+
+    public String createToken(String email) {
+        Claims claims = Jwts.claims().setSubject(email);
+        Date now = new Date();
+        Date expiry = new Date(now.getTime() + tokenValidity);
+        return Jwts.builder()
+                .setClaims(claims)
+                .setIssuedAt(now)
+                .setExpiration(expiry)
+                .signWith(key, SignatureAlgorithm.HS256)
+                .compact();
+    }
+
+    public Authentication getAuthentication(String token) {
+        String email = getEmail(token);
+        return new UsernamePasswordAuthenticationToken(email, "", null);
+    }
+
+    public String getEmail(String token) {
+        return Jwts.parser().setSigningKey(key)
+                .parseClaimsJws(token)
+                .getBody().getSubject();
+    }
+
+    public String resolveToken(HttpServletRequest request) {
+        String bearer = request.getHeader("Authorization");
+        return (bearer != null && bearer.startsWith("Bearer ")) ? bearer.substring(7) : null;
+    }
+
+    public boolean validateToken(String token) {
+        try {
+            Jwts.parser().setSigningKey(key).parseClaimsJws(token);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+}

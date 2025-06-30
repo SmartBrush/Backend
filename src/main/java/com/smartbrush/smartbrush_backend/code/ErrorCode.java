@@ -42,7 +42,12 @@ public enum ErrorCode {
      * 502 BAD_GATEWAY - 이트웨이 또는 프록시 서버 오류
      */
 
-    SAMPLE_EXCEPTION(HttpStatus.BAD_REQUEST, "샘플 예외입니다.");
+    SAMPLE_EXCEPTION(HttpStatus.BAD_REQUEST, "샘플 예외입니다."),
+
+    /**
+     * Auth
+     */
+    USER_NOT_FOUND(HttpStatus.NOT_FOUND, "사용자를 찾을 수 없습니다.");
 
     private final HttpStatus status;
     private final String message;
