@@ -15,20 +15,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api")
 @RequiredArgsConstructor
 @Tag(name = "로그인", description = "일반 로그인 API")
 public class AuthController {
 
     private final AuthService authService;
 
-    @PostMapping("/signup")
+    @PostMapping("/auth/signup")
     @Operation(summary = "회원가입", description = "회원가입 API 입니다.")
     public ResponseDTO<AuthResponseDTO.SignupResult> signup(@RequestBody @Valid AuthRequestDTO.Signup request) {
         return new ResponseDTO<>(ResponseCode.SUCCESS, authService.signup(request));
     }
 
-    @PostMapping("/login")
+    @PostMapping("/auth/login")
     @Operation(summary = "로그인", description = "로그인 API 입니다.")
     public ResponseDTO<AuthResponseDTO.LoginResult> login(@RequestBody @Valid AuthRequestDTO.Login request) {
         return new ResponseDTO<>(ResponseCode.SUCCESS, authService.login(request));
