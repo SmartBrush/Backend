@@ -4,7 +4,7 @@ import com.smartbrush.smartbrush_backend.code.ResponseCode;
 import com.smartbrush.smartbrush_backend.dto.Auth.AuthRequestDTO;
 import com.smartbrush.smartbrush_backend.dto.Auth.AuthResponseDTO;
 import com.smartbrush.smartbrush_backend.dto.response.ResponseDTO;
-import com.smartbrush.smartbrush_backend.service.AuthService.AuthService;
+import com.smartbrush.smartbrush_backend.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
