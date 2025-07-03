@@ -1,22 +1,25 @@
 package com.smartbrush.smartbrush_backend.jwt;
 
-import jakarta.servlet.*;
+import com.smartbrush.smartbrush_backend.entity.AuthEntity;
+import com.smartbrush.smartbrush_backend.repository.AuthRepository;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.Optional;
 
 @Component
+@RequiredArgsConstructor
 public class JwtFilter extends OncePerRequestFilter {
 
     private final JwtProvider jwtProvider;
-
-    public JwtFilter(JwtProvider jwtProvider) {
-        this.jwtProvider = jwtProvider;
-    }
+    private final AuthRepository authRepository;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,
@@ -31,6 +34,16 @@ public class JwtFilter extends OncePerRequestFilter {
         if (token != null && jwtProvider.validateToken(token)) {
             var authentication = jwtProvider.getAuthentication(token);
             SecurityContextHolder.getContext().setAuthentication(authentication);
+
+            String email = jwtProvider.getEmail(token);
+            Optional<AuthEntity> userOpt = authRepository.findByEmail(email);
+
+            if (userOpt.isPresent()) {
+                AuthEntity user = userOpt.get();
+                request.setAttribute("userId", user.getId());
+                request.setAttribute("author", user.getNickname());
+                request.setAttribute("profileImage", ""); // 필요시 사용자 프로필 경로 연결
+            }
         }
 
         // 3. 다음 필터로 진행
