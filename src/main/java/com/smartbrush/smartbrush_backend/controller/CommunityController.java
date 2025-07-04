@@ -15,12 +15,12 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/community")
 @RequiredArgsConstructor
-@Tag(name = "커뮤니티", description = "커뮤니티 CRUD 입니다.")
+@Tag(name = "커뮤니티 고민공유", description = "커뮤니티 고민공유 CRUD 입니다.")
 public class CommunityController {
 
     private final CommunityService communityService;
 
-    @Operation(summary = "게시글 생성")
+    @Operation(summary = "게시글 생성", description = "커뮤니티 고민공유를 생성합니다.")
     @PostMapping("/create")
     public ResponseEntity<CommunityResponseDTO> createCommunity(@RequestBody CommunityRequestDTO dto,
                                                                 @RequestAttribute Long userId,
@@ -30,19 +30,19 @@ public class CommunityController {
         return ResponseEntity.status(ResponseCode.CREATED.getStatus()).body(response);
     }
 
-    @Operation(summary = "전체 게시글 조회")
+    @Operation(summary = "전체 게시글 조회", description = "전체 고민공유를 조회합니다.")
     @GetMapping("/list")
     public ResponseEntity<List<CommunityResponseDTO>> getAllCommunities() {
         return ResponseEntity.status(ResponseCode.SUCCESS.getStatus()).body(communityService.getAllCommunities());
     }
 
-    @Operation(summary = "단일 게시글 조회")
+    @Operation(summary = "단일 게시글 조회", description = "고민공유를 조회하여 자세히 볼 수 있습니다.")
     @GetMapping("/detail/{id}")
     public ResponseEntity<CommunityResponseDTO> getCommunity(@PathVariable Long id) {
         return ResponseEntity.status(ResponseCode.SUCCESS.getStatus()).body(communityService.getCommunity(id));
     }
 
-    @Operation(summary = "게시글 수정")
+    @Operation(summary = "게시글 수정", description = "글을 쓴 사용자만 고민공유를 수정 가능합니다.")
     @PutMapping("/update/{id}")
     public ResponseEntity<CommunityResponseDTO> updateCommunity(@PathVariable Long id,
                                                                 @RequestBody CommunityRequestDTO dto,
@@ -50,7 +50,7 @@ public class CommunityController {
         return ResponseEntity.status(ResponseCode.SUCCESS.getStatus()).body(communityService.updateCommunity(id, dto, userId));
     }
 
-    @Operation(summary = "게시글 삭제")
+    @Operation(summary = "게시글 삭제", description = "글을 쓴 사용자만 고민공유를 삭제 가능합니다.")
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> deleteCommunity(@PathVariable Long id,
                                                 @RequestAttribute Long userId) {
