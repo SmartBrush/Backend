@@ -42,7 +42,10 @@ public class JwtFilter extends OncePerRequestFilter {
                 AuthEntity user = userOpt.get();
                 request.setAttribute("userId", user.getId());
                 request.setAttribute("author", user.getNickname());
+                request.setAttribute("email", user.getEmail());
                 request.setAttribute("profileImage", ""); // 필요시 사용자 프로필 경로 연결
+
+
             }
         }
 
