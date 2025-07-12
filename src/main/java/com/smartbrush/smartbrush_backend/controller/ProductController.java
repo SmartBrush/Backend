@@ -29,4 +29,11 @@ public class ProductController {
             return productRepository.findByCategory(category);
         }
     }
+
+    @Operation(summary = "모든 제품 가져오기", description = "모든 제품을 가져옵니다.")
+    @GetMapping
+    public List<Product> getAllProducts() {
+        return productRepository.findAll();
+    }
+
 }
