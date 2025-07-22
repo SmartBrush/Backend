@@ -56,8 +56,8 @@ public class ProfileInfoServiceImpl implements ProfileInfoService {
                 info.getUvExposureLevel(),
                 info.getWashingFrequency(),
                 info.getUsingProducts().stream().map(Enum::name).toList(),
-                info.getEatingHabits().stream().map(Enum::name).collect(Collectors.toSet()), // ✅
-                info.getScalpSymptoms().stream().map(Enum::name).collect(Collectors.toSet()), // ✅
+                info.getEatingHabits().stream().map(Enum::name).collect(Collectors.toSet()),
+                info.getScalpSymptoms().stream().map(Enum::name).collect(Collectors.toSet()),
                 info.getSleepDuration(),
                 info.getSleepStartTime()
         );
@@ -82,8 +82,8 @@ public class ProfileInfoServiceImpl implements ProfileInfoService {
                 info.getUvExposureLevel(),
                 info.getWashingFrequency(),
                 info.getUsingProducts().stream().map(Enum::name).toList(),
-                info.getEatingHabits().stream().map(Enum::name).collect(Collectors.toSet()), // ✅
-                info.getScalpSymptoms().stream().map(Enum::name).collect(Collectors.toSet()), // ✅
+                info.getEatingHabits().stream().map(Enum::name).collect(Collectors.toSet()),
+                info.getScalpSymptoms().stream().map(Enum::name).collect(Collectors.toSet()),
                 info.getSleepDuration(),
                 info.getSleepStartTime()
         );
