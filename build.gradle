@@ -50,3 +50,7 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+bootJar {
+	mainClass = 'com.smartbrush.smartbrush_backend.SmartbrushBackendApplication'
+}
