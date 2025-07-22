@@ -7,13 +7,13 @@ plugins {
 group = 'com.smartbrush'
 version = '0.0.1-SNAPSHOT'
 
-if (System.getenv("EC2") != "true") {
-	java {
-		toolchain {
-			languageVersion = JavaLanguageVersion.of(17)
-		}
-	}
-}
+//if (System.getenv("EC2") != "true") {
+//	java {
+//		toolchain {
+//			languageVersion = JavaLanguageVersion.of(17)
+//		}
+//	}
+//}
 
 configurations {
 	compileOnly {
