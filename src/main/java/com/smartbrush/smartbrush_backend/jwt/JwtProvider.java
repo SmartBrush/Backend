@@ -1,5 +1,8 @@
 package com.smartbrush.smartbrush_backend.jwt;
 
+import com.smartbrush.smartbrush_backend.entity.AuthEntity;
+import com.smartbrush.smartbrush_backend.repository.AuthRepository;
+import com.smartbrush.smartbrush_backend.service.UserDetailsImpl;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -20,6 +23,11 @@ public class JwtProvider {
 
     private final SecretKey key = Keys.hmacShaKeyFor("mysmartbrushjwtsecretkey1234567890".getBytes());
     private final long tokenValidity = 1000L * 60 * 60; // 1시간
+    private final AuthRepository authRepository;
+
+    public JwtProvider(AuthRepository authRepository) {
+        this.authRepository = authRepository;
+    }
 
     public String createToken(String email) {
         Claims claims = Jwts.claims().setSubject(email);
@@ -35,7 +43,14 @@ public class JwtProvider {
 
     public Authentication getAuthentication(String token) {
         String email = getEmail(token);
-        return new UsernamePasswordAuthenticationToken(email, "", null);
+
+        // ✅ 주입받은 authRepository로 사용자 조회
+        AuthEntity user = authRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("사용자 없음"));
+
+        UserDetailsImpl userDetails = new UserDetailsImpl(user);
+
+        return new UsernamePasswordAuthenticationToken(userDetails, "", userDetails.getAuthorities());
     }
 
     public String getEmail(String token) {
