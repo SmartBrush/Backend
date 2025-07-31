@@ -40,8 +40,9 @@ public class SecurityConfig {
                                 "/api/post/**",
                                 "/api/mypage/**"
                         ).permitAll()
-                        .requestMatchers("/api/question/**", "/api/question").authenticated()
-                        .requestMatchers("/api/**").permitAll()
+
+                        .requestMatchers("/api/uv/**", "/api/question/**").authenticated()
+
                         .anyRequest().permitAll()
                 )
                 .formLogin(login -> login.disable())
