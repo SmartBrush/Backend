@@ -41,12 +41,30 @@ public class JwtProvider {
                 .compact();
     }
 
+//    public Authentication getAuthentication(String token) {
+//        String email = getEmail(token);
+//
+//        // ✅ 주입받은 authRepository로 사용자 조회
+//        AuthEntity user = authRepository.findByEmail(email)
+//                .orElseThrow(() -> new RuntimeException("사용자 없음"));
+//
+//        UserDetailsImpl userDetails = new UserDetailsImpl(user);
+//
+//        return new UsernamePasswordAuthenticationToken(userDetails, "", userDetails.getAuthorities());
+//    }
+
     public Authentication getAuthentication(String token) {
         String email = getEmail(token);
 
-        // ✅ 주입받은 authRepository로 사용자 조회
+        // ✅ 사용자 없으면 새로 생성
         AuthEntity user = authRepository.findByEmail(email)
-                .orElseThrow(() -> new RuntimeException("사용자 없음"));
+                .orElseGet(() -> {
+                    AuthEntity newUser = new AuthEntity();
+                    newUser.setEmail(email);
+                    newUser.setPassword(""); // 소셜 로그인 또는 외부 로그인인 경우
+                    newUser.setNickname("사용자_" + System.currentTimeMillis()); // 기본 닉네임 설정
+                    return authRepository.save(newUser);
+                });
 
         UserDetailsImpl userDetails = new UserDetailsImpl(user);
 
