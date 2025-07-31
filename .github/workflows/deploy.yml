@@ -25,7 +25,7 @@ jobs:
       - name: Set application.yml
         run: |
           mkdir -p src/main/resources
-          echo "${{ secrets.APPLICATION_YML }}" > src/main/resources/application.yml
+          printf "%s" "${{ secrets.APPLICATION_YML }}" > src/main/resources/application.yml
 
       # 4. gradlew 권한 부여
       - name: Grant execute permission
