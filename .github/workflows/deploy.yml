@@ -2,45 +2,57 @@ name: Deploy to EC2
 
 on:
   push:
-    branches: [ develop ]
+    branches:
+      - develop
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v3
+      # 1. 저장소 checkout
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Set up JDK
-        uses: actions/setup-java@v3
+      # 2. JDK 17 설치
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
         with:
-          java-version: '17'
           distribution: 'temurin'
+          java-version: '17'
 
-      - name: Grant execute permission for Gradle
-        run: chmod +x ./gradlew
-
-      - name: Build JAR with prod profile
-        run: ./gradlew build -x test -Dspring.profiles.active=prod
-
-      - name: Write PEM file from secret
+      # 3. application.yml 세팅
+      - name: Set application.yml
         run: |
-          echo "${{ secrets.EC2_KEY }}" > private_key.pem
-          chmod 600 private_key.pem
+          mkdir -p src/main/resources
+          echo "${{ secrets.APPLICATION_YML }}" > src/main/resources/application.yml
 
-      - name: Upload jar to EC2
-        run: |
-          scp -i private_key.pem -o StrictHostKeyChecking=no \
-            ./build/libs/*.jar \
-            ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/home/${{ secrets.EC2_USER }}/app/
+      # 4. gradlew 권한 부여
+      - name: Grant execute permission
+        run: chmod +x gradlew
 
-      - name: Restart app on EC2
-        run: |
-          ssh -i private_key.pem -o StrictHostKeyChecking=no \
-            ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << EOF
-              pkill -f 'java -jar' || true
-              nohup java -jar /home/${{ secrets.EC2_USER }}/app/*.jar \
-              --spring.profiles.active=prod \
-              > /home/${{ secrets.EC2_USER }}/app/log.txt 2>&1 &
-          EOF
+      # 5. Gradle 빌드
+      - name: Build with Gradle
+        run: ./gradlew clean build -x test
+
+      # 6. JAR EC2로 업로드 (plain 제외)
+      - name: Upload JAR to EC2
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_KEY }}
+          source: $(ls build/libs/*.jar | grep -v plain)
+          target: /home/ubuntu/app
+
+      # 7. EC2에서 JAR 실행
+      - name: SSH and restart app
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_KEY }}
+          script: |
+            pkill -f 'java -jar' || true
+            JAR_NAME=$(ls /home/ubuntu/app/*.jar | grep -v plain | head -n 1)
+            nohup java -jar $JAR_NAME > /home/ubuntu/app/log.txt 2>&1 &
