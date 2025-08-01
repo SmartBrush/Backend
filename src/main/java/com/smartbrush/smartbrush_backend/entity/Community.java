@@ -1,5 +1,6 @@
 package com.smartbrush.smartbrush_backend.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -9,6 +10,7 @@ import java.time.LocalDateTime;
 @Table(name = "communities")
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Community {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

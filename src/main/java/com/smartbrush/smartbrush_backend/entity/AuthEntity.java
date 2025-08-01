@@ -29,6 +29,8 @@ public class AuthEntity {
     @Column(nullable = false)
     private String nickname;
 
+    private String profileImage;
+
     @ManyToMany
     @JoinTable(
             name = "post_likes",
@@ -49,7 +51,17 @@ public class AuthEntity {
     @Builder.Default
     @JsonIgnore
     private List<Post> scrappedPosts  = new ArrayList<>();
-
+    
+    // 제품 추천 위시리스트
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "product_wishlist",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "product_id")
+    )
+    @Builder.Default
+    @JsonIgnore
+    private List<Product> wishlist = new ArrayList<>();
 
 }
 
