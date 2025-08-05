@@ -14,4 +14,5 @@ public class MyPageResponseDTO {
     private String nickname;
     private String profileImage;
     private int attendanceDays;
+    private String email;
 }
