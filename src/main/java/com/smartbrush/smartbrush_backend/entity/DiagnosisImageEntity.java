@@ -21,5 +21,5 @@ public class DiagnosisImageEntity {
 
     private LocalDateTime capturedAt;
 
-    private String imageUrl;  // ✅ S3에 저장된 이미지 URL
+    private String imageUrl;  //S3에 저장된 이미지 URL
 }

@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface DiagnosisImageRepository extends JpaRepository<DiagnosisImageEntity, Long> {
     List<DiagnosisImageEntity> findTop100ByEmailOrderByCapturedAtDesc(String email);
+    List<DiagnosisImageEntity> findTop4ByEmailOrderByCapturedAtDesc(String email);
+
 }
