@@ -47,6 +47,12 @@ dependencies {
 
 	implementation 'com.fasterxml.jackson.core:jackson-databind'
 
+	//CV
+	implementation 'org.bytedeco:javacv-platform:1.5.9' // 최신버전
+
+	//S3
+	implementation 'org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE'
+
 }
 
 tasks.named('test') {
