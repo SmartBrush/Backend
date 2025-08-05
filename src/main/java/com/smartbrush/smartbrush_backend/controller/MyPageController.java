@@ -42,6 +42,7 @@ public class MyPageController {
                 .nickname(nickname)
                 .profileImage(profileImage)
                 .attendanceDays(30)
+                .email(user.getEmail())
                 .build();
 
         return ResponseEntity.ok(dto);
