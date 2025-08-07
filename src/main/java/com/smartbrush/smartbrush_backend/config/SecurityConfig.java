@@ -41,7 +41,7 @@ public class SecurityConfig {
                                 "/api/mypage/**"
                         ).permitAll()
 
-                        .requestMatchers("/api/uv/**", "/api/question/**").authenticated()
+                        .requestMatchers("/api/uv/**", "/api/question/**", "/api/image/upload" ).authenticated()
 
                         .anyRequest().permitAll()
                 )
