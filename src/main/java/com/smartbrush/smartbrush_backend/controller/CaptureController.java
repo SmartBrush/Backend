@@ -6,7 +6,7 @@ import com.smartbrush.smartbrush_backend.repository.DiagnosisImageRepository;
 import com.smartbrush.smartbrush_backend.service.DiagnosisImageService;
 import com.smartbrush.smartbrush_backend.storage.S3Uploader;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.parameters.RequestBody; // Swagger용
+import org.springframework.web.bind.annotation.RequestBody; // ✅ 이걸로 변경
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.servlet.http.HttpServletRequest;
@@ -147,7 +147,7 @@ public class CaptureController {
     @Operation(
             summary = "이미지 업로드 (ESP32 → S3)",
             description = "ESP32-CAM에서 전송된 JPEG 이미지를 S3에 저장합니다.",
-            requestBody = @RequestBody(
+            requestBody = @io.swagger.v3.oas.annotations.parameters.RequestBody( // ⬅ Swagger용
                     required = true,
                     content = @Content(
                             mediaType = "application/octet-stream",
@@ -157,8 +157,9 @@ public class CaptureController {
     )
     @PostMapping("/image/upload")
     public ResponseEntity<String> receiveImage(
-            @org.springframework.web.bind.annotation.RequestBody byte[] imageData,
+            @org.springframework.web.bind.annotation.RequestBody byte[] imageData, // ⬅ Spring의 RequestBody
             HttpServletRequest request) {
+
         String token = extractJwtFromRequest(request);
         String email = jwtProvider.getEmail(token);
 
@@ -173,7 +174,5 @@ public class CaptureController {
 
         return ResponseEntity.ok("✅ S3 업로드 성공: " + imageUrl);
     }
-
-
 
 }
