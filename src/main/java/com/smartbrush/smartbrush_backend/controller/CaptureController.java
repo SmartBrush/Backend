@@ -6,6 +6,9 @@ import com.smartbrush.smartbrush_backend.repository.DiagnosisImageRepository;
 import com.smartbrush.smartbrush_backend.service.DiagnosisImageService;
 import com.smartbrush.smartbrush_backend.storage.S3Uploader;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.parameters.RequestBody; // Swagger용
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.*;
@@ -120,14 +123,44 @@ public class CaptureController {
 //        return ResponseEntity.ok("S3 업로드 완료: " + imageUrl);
 //    }
 
+//    @Operation(
+//            summary = "이미지 업로드 (byte[])",
+//            description = "ESP32-CAM에서 찍은 이미지를 JWT 기반으로 인증하여 S3에 업로드합니다."
+//    )
+//    @PostMapping("/image/upload")
+//    public ResponseEntity<String> receiveImage(@RequestBody byte[] imageData, HttpServletRequest request) {
+//        String token = extractJwtFromRequest(request);
+//        String email = jwtProvider.getEmail(token); // 이메일 기준
+//
+//        String fileName = "diagnosis/" + email + "/" + UUID.randomUUID() + ".jpg";
+//        String imageUrl = s3Uploader.upload(imageData, fileName);
+//
+//        DiagnosisImageEntity image = new DiagnosisImageEntity();
+//        image.setEmail(email);
+//        image.setCapturedAt(LocalDateTime.now());
+//        image.setImageUrl(imageUrl);
+//        diagnosisImageRepository.save(image);
+//
+//        return ResponseEntity.ok("✅ S3 업로드 성공: " + imageUrl);
+//    }
+
     @Operation(
-            summary = "이미지 업로드 (byte[])",
-            description = "ESP32-CAM에서 찍은 이미지를 JWT 기반으로 인증하여 S3에 업로드합니다."
+            summary = "이미지 업로드 (ESP32 → S3)",
+            description = "ESP32-CAM에서 전송된 JPEG 이미지를 S3에 저장합니다.",
+            requestBody = @RequestBody(
+                    required = true,
+                    content = @Content(
+                            mediaType = "application/octet-stream",
+                            schema = @Schema(type = "string", format = "binary")
+                    )
+            )
     )
     @PostMapping("/image/upload")
-    public ResponseEntity<String> receiveImage(@RequestBody byte[] imageData, HttpServletRequest request) {
+    public ResponseEntity<String> receiveImage(
+            @org.springframework.web.bind.annotation.RequestBody byte[] imageData,
+            HttpServletRequest request) {
         String token = extractJwtFromRequest(request);
-        String email = jwtProvider.getEmail(token); // 이메일 기준
+        String email = jwtProvider.getEmail(token);
 
         String fileName = "diagnosis/" + email + "/" + UUID.randomUUID() + ".jpg";
         String imageUrl = s3Uploader.upload(imageData, fileName);
@@ -140,6 +173,7 @@ public class CaptureController {
 
         return ResponseEntity.ok("✅ S3 업로드 성공: " + imageUrl);
     }
+
 
 
 }
