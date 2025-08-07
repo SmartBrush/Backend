@@ -5,6 +5,7 @@ import com.smartbrush.smartbrush_backend.jwt.JwtProvider;
 import com.smartbrush.smartbrush_backend.repository.DiagnosisImageRepository;
 import com.smartbrush.smartbrush_backend.service.DiagnosisImageService;
 import com.smartbrush.smartbrush_backend.storage.S3Uploader;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.*;
@@ -118,6 +119,11 @@ public class CaptureController {
 //
 //        return ResponseEntity.ok("S3 업로드 완료: " + imageUrl);
 //    }
+
+    @Operation(
+            summary = "이미지 업로드 (byte[])",
+            description = "ESP32-CAM에서 찍은 이미지를 JWT 기반으로 인증하여 S3에 업로드합니다."
+    )
     @PostMapping("/image/upload")
     public ResponseEntity<String> receiveImage(@RequestBody byte[] imageData, HttpServletRequest request) {
         String token = extractJwtFromRequest(request);
