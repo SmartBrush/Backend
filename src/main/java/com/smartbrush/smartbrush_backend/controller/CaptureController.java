@@ -99,4 +99,41 @@ public class CaptureController {
         return ResponseEntity.ok(urls);
     }
 
+
+//    @PostMapping("/image/upload")
+//    public ResponseEntity<String> receiveImage(
+//            @RequestBody byte[] imageData, HttpServletRequest request) {
+//
+//        String token = extractJwtFromRequest(request);
+//        String email = jwtProvider.getEmail(token);
+//
+//        String fileName = "diagnosis/" + email + "/" + UUID.randomUUID() + ".jpg";
+//        String imageUrl = s3Uploader.upload(imageData, fileName);
+//
+//        DiagnosisImageEntity image = new DiagnosisImageEntity();
+//        image.setEmail(email);
+//        image.setCapturedAt(LocalDateTime.now());
+//        image.setImageUrl(imageUrl);
+//        diagnosisImageRepository.save(image);
+//
+//        return ResponseEntity.ok("S3 업로드 완료: " + imageUrl);
+//    }
+    @PostMapping("/image/upload")
+    public ResponseEntity<String> receiveImage(@RequestBody byte[] imageData, HttpServletRequest request) {
+        String token = extractJwtFromRequest(request);
+        String email = jwtProvider.getEmail(token); // 이메일 기준
+
+        String fileName = "diagnosis/" + email + "/" + UUID.randomUUID() + ".jpg";
+        String imageUrl = s3Uploader.upload(imageData, fileName);
+
+        DiagnosisImageEntity image = new DiagnosisImageEntity();
+        image.setEmail(email);
+        image.setCapturedAt(LocalDateTime.now());
+        image.setImageUrl(imageUrl);
+        diagnosisImageRepository.save(image);
+
+        return ResponseEntity.ok("✅ S3 업로드 성공: " + imageUrl);
+    }
+
+
 }
