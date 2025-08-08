@@ -144,10 +144,22 @@ public class CaptureController {
 //        return ResponseEntity.ok("✅ S3 업로드 성공: " + imageUrl);
 //    }
 
+//    @Operation(
+//            summary = "이미지 업로드 (ESP32 → S3)",
+//            description = "ESP32-CAM에서 전송된 JPEG 이미지를 S3에 저장합니다.",
+//            requestBody = @io.swagger.v3.oas.annotations.parameters.RequestBody( // ⬅ Swagger용
+//                    required = true,
+//                    content = @Content(
+//                            mediaType = "application/octet-stream",
+//                            schema = @Schema(type = "string", format = "binary")
+//                    )
+//            )
+//    )
+//    @PostMapping("/image/upload")
     @Operation(
             summary = "이미지 업로드 (ESP32 → S3)",
             description = "ESP32-CAM에서 전송된 JPEG 이미지를 S3에 저장합니다.",
-            requestBody = @io.swagger.v3.oas.annotations.parameters.RequestBody( // ⬅ Swagger용
+            requestBody = @io.swagger.v3.oas.annotations.parameters.RequestBody(
                     required = true,
                     content = @Content(
                             mediaType = "application/octet-stream",
@@ -155,7 +167,7 @@ public class CaptureController {
                     )
             )
     )
-    @PostMapping("/image/upload")
+    @PostMapping(value = "/image/upload", consumes = MediaType.APPLICATION_OCTET_STREAM_VALUE)
     public ResponseEntity<String> receiveImage(
             @org.springframework.web.bind.annotation.RequestBody byte[] imageData, // ⬅ Spring의 RequestBody
             HttpServletRequest request) {
