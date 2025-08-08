@@ -33,7 +33,7 @@ public class CaptureController {
     private final DiagnosisImageService diagnosisImageService;
 
 
-    private static final String ESP32_CAPTURE_URL = "http://172.20.10.11/capture";
+    private static final String ESP32_CAPTURE_URL = "http://172.20.10.3/capture";
 
     @GetMapping("/capture")
     public ResponseEntity<String> triggerEsp32RepeatedCapture(HttpServletRequest request) {
