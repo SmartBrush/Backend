@@ -88,40 +88,40 @@ public class CaptureController {
         return ResponseEntity.ok(urls);
     }
 
-//    @Operation(
-//            summary = "이미지 업로드 (ESP32 → S3, RAW 바이트)",
-//            description = "ESP32-CAM이 전송한 JPEG 바이트를 그대로 받아 S3에 저장합니다.",
-//            requestBody = @io.swagger.v3.oas.annotations.parameters.RequestBody(
-//                    required = true,
-//                    content = @Content(
-//                            mediaType = "application/octet-stream",
-//                            schema = @Schema(type = "string", format = "binary")
-//                    )
-//            )
-//    )
-//    @PostMapping(
-//            value = "/image/upload",
-//            consumes = MediaType.APPLICATION_OCTET_STREAM_VALUE,
-//            produces = MediaType.TEXT_PLAIN_VALUE
-//    )
-//    public ResponseEntity<String> receiveImage(@RequestBody byte[] imageData,
-//                                               HttpServletRequest request) {
-//        String token = extractJwtFromRequest(request);
-//        String email = jwtProvider.getEmail(token);
-//
-//        if (imageData == null || imageData.length == 0) {
-//            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "빈 바디");
-//        }
-//
-//        String fileName = "diagnosis/" + email + "/" + UUID.randomUUID() + ".jpg";
-//        String imageUrl = s3Uploader.upload(imageData, fileName, "image/jpeg");
-//
-//        DiagnosisImageEntity image = new DiagnosisImageEntity();
-//        image.setEmail(email);
-//        image.setCapturedAt(LocalDateTime.now());
-//        image.setImageUrl(imageUrl);
-//        diagnosisImageRepository.save(image);
-//
-//        return ResponseEntity.ok("✅ S3 업로드 성공: " + imageUrl);
-//    }
+    @Operation(
+            summary = "이미지 업로드 (ESP32 → S3, RAW 바이트)",
+            description = "ESP32-CAM이 전송한 JPEG 바이트를 그대로 받아 S3에 저장합니다.",
+            requestBody = @io.swagger.v3.oas.annotations.parameters.RequestBody(
+                    required = true,
+                    content = @Content(
+                            mediaType = "application/octet-stream",
+                            schema = @Schema(type = "string", format = "binary")
+                    )
+            )
+    )
+    @PostMapping(
+            value = "/image/upload",
+            consumes = MediaType.APPLICATION_OCTET_STREAM_VALUE,
+            produces = MediaType.TEXT_PLAIN_VALUE
+    )
+    public ResponseEntity<String> receiveImage(@RequestBody byte[] imageData,
+                                               HttpServletRequest request) {
+        String token = extractJwtFromRequest(request);
+        String email = jwtProvider.getEmail(token);
+
+        if (imageData == null || imageData.length == 0) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "빈 바디");
+        }
+
+        String fileName = "diagnosis/" + email + "/" + UUID.randomUUID() + ".jpg";
+        String imageUrl = s3Uploader.upload(imageData, fileName, "image/jpeg");
+
+        DiagnosisImageEntity image = new DiagnosisImageEntity();
+        image.setEmail(email);
+        image.setCapturedAt(LocalDateTime.now());
+        image.setImageUrl(imageUrl);
+        diagnosisImageRepository.save(image);
+
+        return ResponseEntity.ok("✅ S3 업로드 성공: " + imageUrl);
+    }
 }
