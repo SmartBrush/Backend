@@ -75,14 +75,4 @@ public class SwaggerConfig {
                 .addSecurityItem(securityRequirement)
                 .components(components);
     }
-
-    // ✅ 스캔 범위/경로를 명시
-    @Bean
-    public GroupedOpenApi captureApi() {
-        return GroupedOpenApi.builder()
-                .group("capture-controller")
-                .packagesToScan("com.smartbrush.smartbrush_backend.controller")
-                .pathsToMatch("/api/**")           // /api 아래 전부 포함
-                .build();
-    }
 }
