@@ -55,7 +55,7 @@ public class DiagnosisController {
             HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
 
             ResponseEntity<String> response = new RestTemplate().postForEntity(
-                    "http://localhost:5000/ai", requestEntity, String.class);
+                    "https://flask-production-5767.up.railway.app/ai", requestEntity, String.class);
 
             // 응답 파싱
             ObjectMapper objectMapper = new ObjectMapper();
