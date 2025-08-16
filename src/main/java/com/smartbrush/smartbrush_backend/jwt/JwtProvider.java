@@ -22,8 +22,8 @@ import java.security.Key;
 public class JwtProvider {
 
     private final SecretKey key = Keys.hmacShaKeyFor("mysmartbrushjwtsecretkey1234567890".getBytes());
-//    private final long tokenValidity = 1000L * 60 * 60; // 1시간
-    private final long tokenValidity = 1000L * 60 * 1; // 1분
+    private final long tokenValidity = 1000L * 60 * 60; // 1시간
+//    private final long tokenValidity = 1000L * 60 * 1; // 1분 실험
 
     private final AuthRepository authRepository;
 
@@ -54,6 +54,15 @@ public class JwtProvider {
 //
 //        return new UsernamePasswordAuthenticationToken(userDetails, "", userDetails.getAuthorities());
 //    }
+
+    public String createRefreshToken(String email) {
+        return Jwts.builder()
+                .setSubject(email)
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(System.currentTimeMillis() + 1000L * 60 * 60 * 24 * 14)) // 14일
+                .signWith(key, SignatureAlgorithm.HS256)
+                .compact();
+    }
 
     public Authentication getAuthentication(String token) {
         String email = getEmail(token);
