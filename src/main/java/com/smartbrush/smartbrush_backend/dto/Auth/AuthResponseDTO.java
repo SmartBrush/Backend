@@ -8,6 +8,7 @@ public class AuthResponseDTO {
     @AllArgsConstructor
     public static class LoginResult {
         private String accessToken;
+        private String refreshToken;
         private String nickname;
     }
 

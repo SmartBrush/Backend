@@ -23,6 +23,8 @@ public class JwtProvider {
 
     private final SecretKey key = Keys.hmacShaKeyFor("mysmartbrushjwtsecretkey1234567890".getBytes());
     private final long tokenValidity = 1000L * 60 * 60; // 1시간
+//    private final long tokenValidity = 1000L * 60 * 1; // 1분 실험
+
     private final AuthRepository authRepository;
 
     public JwtProvider(AuthRepository authRepository) {
@@ -44,7 +46,7 @@ public class JwtProvider {
 //    public Authentication getAuthentication(String token) {
 //        String email = getEmail(token);
 //
-//        // ✅ 주입받은 authRepository로 사용자 조회
+//        // 주입받은 authRepository로 사용자 조회
 //        AuthEntity user = authRepository.findByEmail(email)
 //                .orElseThrow(() -> new RuntimeException("사용자 없음"));
 //
@@ -53,10 +55,19 @@ public class JwtProvider {
 //        return new UsernamePasswordAuthenticationToken(userDetails, "", userDetails.getAuthorities());
 //    }
 
+    public String createRefreshToken(String email) {
+        return Jwts.builder()
+                .setSubject(email)
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(System.currentTimeMillis() + 1000L * 60 * 60 * 24 * 14)) // 14일
+                .signWith(key, SignatureAlgorithm.HS256)
+                .compact();
+    }
+
     public Authentication getAuthentication(String token) {
         String email = getEmail(token);
 
-        // ✅ 사용자 없으면 새로 생성
+        // 사용자 없으면 새로 생성
         AuthEntity user = authRepository.findByEmail(email)
                 .orElseGet(() -> {
                     AuthEntity newUser = new AuthEntity();

@@ -10,6 +10,7 @@ import com.smartbrush.smartbrush_backend.repository.AuthRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
@@ -38,7 +39,21 @@ public class AuthServiceImpl implements AuthService {
         return new AuthResponseDTO.SignupResult(auth.getId(), auth.getEmail(), auth.getNickname());
     }
 
+//    @Override
+//    public AuthResponseDTO.LoginResult login(AuthRequestDTO.Login request) {
+//        AuthEntity auth = authRepository.findByEmail(request.getEmail())
+//                .orElseThrow(() -> new GlobalException(ErrorCode.USER_NOT_FOUND));
+//
+//        if (!passwordEncoder.matches(request.getPassword(), auth.getPassword())) {
+//            throw new GlobalException(ErrorCode.INVALID_PASSWORD);
+//        }
+//
+//        String token = jwtProvider.createToken(auth.getEmail());
+//
+//        return new AuthResponseDTO.LoginResult(token, auth.getNickname());
+//    }
     @Override
+    @Transactional
     public AuthResponseDTO.LoginResult login(AuthRequestDTO.Login request) {
         AuthEntity auth = authRepository.findByEmail(request.getEmail())
                 .orElseThrow(() -> new GlobalException(ErrorCode.USER_NOT_FOUND));
@@ -47,8 +62,14 @@ public class AuthServiceImpl implements AuthService {
             throw new GlobalException(ErrorCode.INVALID_PASSWORD);
         }
 
-        String token = jwtProvider.createToken(auth.getEmail());
+        // access / refresh 동시 발급
+        String accessToken = jwtProvider.createToken(auth.getEmail());
+        String refreshToken = jwtProvider.createRefreshToken(auth.getEmail());
 
-        return new AuthResponseDTO.LoginResult(token, auth.getNickname());
+        // refreshToken 저장 (DB/Redis 중 DB 예시)
+        auth.setRefreshToken(refreshToken);
+        // 필요한 경우 refreshToken 만료일도 저장하도록 확장 가능 (auth.setRefreshTokenExpiry(...))
+
+        return new AuthResponseDTO.LoginResult(accessToken, refreshToken, auth.getNickname());
     }
 }
