@@ -22,7 +22,9 @@ import java.security.Key;
 public class JwtProvider {
 
     private final SecretKey key = Keys.hmacShaKeyFor("mysmartbrushjwtsecretkey1234567890".getBytes());
-    private final long tokenValidity = 1000L * 60 * 60; // 1시간
+//    private final long tokenValidity = 1000L * 60 * 60; // 1시간
+    private final long tokenValidity = 1000L * 60 * 1; // 1분
+
     private final AuthRepository authRepository;
 
     public JwtProvider(AuthRepository authRepository) {
