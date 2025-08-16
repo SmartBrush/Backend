@@ -41,6 +41,7 @@ public class SecurityConfig {
                                 "/api/mypage/**"
                         ).permitAll()
 
+                        // 인증 필요 API
                         .requestMatchers("/api/uv/**", "/api/question/**", "/api/image/upload" ).authenticated()
 
                         .anyRequest().permitAll()
@@ -54,7 +55,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOriginPatterns(List.of("*")); // 모든 도메인 허용
-        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
 
