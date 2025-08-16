@@ -46,7 +46,7 @@ public class JwtProvider {
 //    public Authentication getAuthentication(String token) {
 //        String email = getEmail(token);
 //
-//        // ✅ 주입받은 authRepository로 사용자 조회
+//        // 주입받은 authRepository로 사용자 조회
 //        AuthEntity user = authRepository.findByEmail(email)
 //                .orElseThrow(() -> new RuntimeException("사용자 없음"));
 //
@@ -67,7 +67,7 @@ public class JwtProvider {
     public Authentication getAuthentication(String token) {
         String email = getEmail(token);
 
-        // ✅ 사용자 없으면 새로 생성
+        // 사용자 없으면 새로 생성
         AuthEntity user = authRepository.findByEmail(email)
                 .orElseGet(() -> {
                     AuthEntity newUser = new AuthEntity();

@@ -116,10 +116,10 @@ public class JwtFilter extends OncePerRequestFilter {
                 });
 
             } catch (ExpiredJwtException ex) {
-                writeError(response, ResponseCode.TOKEN_EXPIRED); // ✅
+                writeError(response, ResponseCode.TOKEN_EXPIRED);
                 return;
             } catch (JwtException | IllegalArgumentException ex) {
-                writeError(response, ResponseCode.INVALID_TOKEN); // ✅
+                writeError(response, ResponseCode.INVALID_TOKEN);
                 return;
             }
         }
@@ -127,7 +127,7 @@ public class JwtFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 
-    private void writeError(HttpServletResponse response, ResponseCode code) throws IOException { // ✅
+    private void writeError(HttpServletResponse response, ResponseCode code) throws IOException {
         response.setStatus(code.getStatus().value());
         response.setCharacterEncoding(StandardCharsets.UTF_8.name());
         response.setContentType("application/json;charset=UTF-8");
