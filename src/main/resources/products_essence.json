@@ -1,872 +1,1024 @@
 [
   {
-    "name": "[떡짐NO 은은한잔향] 몽클로스 슈퍼 실키 에센스 85ml(+트리트먼트 50ml 선착순 증정)",
-    "price": "13,700",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022930810ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000229308&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=1"
+    "brand": "헤드스파7",
+    "name": "[열보호] 헤드스파7 V8 슬리키 헤어미스트 기획세트",
+    "price": "17,010",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022651810ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000226518&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=1"
   },
   {
-    "name": "[한정기획] 어노브 실크 오일 헤어 에센스 70ml 2입 2종 택 1 (텐더블룸/웜페탈)",
+    "brand": "어노브",
+    "name": "어노브 실크 오일 헤어 에센스 70ml 2입 2종 택 1 (텐더블룸/웜페탈)",
     "price": "28,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017142231ko.png?l=ko",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017142224ko.jpg?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171422&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=2"
   },
   {
-    "name": "[7월올영픽/단독기획] 모로칸오일 헤어 트리트먼트 50ml 기획 (기획/단품 중 택 1)",
+    "brand": "모로칸오일",
+    "name": "[단독기획]모로칸오일 헤어 트리트먼트 50ml 기획 (기획 중 택 1 +펌프 )",
     "price": "33,600",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021970062ko.jpg?l=ko",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021970067ko.jpg?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000219700&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=3"
   },
   {
-    "name": "[윤이재 PICK] 아도르 퍼퓸 헤어 오일 80ml 4종 (기획/단품)",
-    "price": "32,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018294724ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000182947&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=4"
+    "brand": "힐링버드",
+    "name": "[8월 올영픽/카니PICK/열보호] 힐링버드 히알루론 밀크 헤어에센스 150ml 기획 (+밀크에센스 31ml 증정)",
+    "price": "17,600",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023010909ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230109&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=4"
   },
   {
-    "name": "[손상모 종결템] 몽클로스 미라클 샤인 에센스 85ml(+트리트먼트 50ml 선착순 증정)",
-    "price": "13,700",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022930909ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000229309&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=5"
+    "brand": "로레알",
+    "name": "[8월올영픽][열보호] 로레알파리 헤어오일 100ml 6종 기획/단품 택 1",
+    "price": "13,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A000000140183183ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000140183&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=5"
   },
   {
-    "name": "[올영픽][윤기 케어] 케라스타즈 엘릭서 얼팀 헤어 오일 75ml 기획/ 30ml",
-    "price": "71,600",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021204915ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000212049&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=6"
+    "brand": "힐링버드",
+    "name": "[8월 올영픽/NEW기획/열보호] 힐링버드 히알루론 밀크 헤어미스트 200ml 기획 (+밀크미스트 31ml 증정)",
+    "price": "15,200",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023011411ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230114&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=6"
   },
   {
-    "name": "[열보호] 케라스타즈 시몽 테르미크 노워시 트리트먼트 150ml 더블기획",
-    "price": "99,600",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022567701ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225677&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=7"
+    "brand": "미쟝센",
+    "name": "[열보호] [대용량] 미쟝센 퍼펙트 오리지널 세럼 200ML",
+    "price": "17,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016538308ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000165383&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=7"
   },
   {
+    "brand": "모로칸오일",
     "name": "[대용량] 모로칸오일 헤어 트리트먼트 100ml(펌프포함) 택1 (오리지널/라이트)",
     "price": "57,600",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019852615ko.jpg?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000198526&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=8"
   },
   {
-    "name": "[열보호] 미쟝센 퍼펙트 세럼 80ML(오리지널/스타일링/하이드레이팅/리치)",
-    "price": "8,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016490225ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000164902&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=9"
+    "brand": "아도르",
+    "name": "[윤이재 PICK] 아도르 퍼퓸 헤어 오일 80ml 4종 (기획/단품)",
+    "price": "27,200",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018294725ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000182947&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=9"
   },
   {
-    "name": "[열보호] 로레알파리 헤어오일 100ml 6종 기획/단품 택 1",
-    "price": "15,890",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A000000140183180ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000140183&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=10"
-  },
-  {
-    "name": "[열보호] [대용량] 미쟝센 퍼펙트 오리지널 세럼 200ml",
-    "price": "17,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016538308ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000165383&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=11"
-  },
-  {
+    "brand": "미쟝센",
     "name": "[열보호] 미쟝센 퍼펙트 세럼 80ML 2입+30ML 증정(오리지널/스타일링)",
-    "price": "19,800",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016490038ko.png?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000164900&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=12"
+    "price": "17,700",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016490040ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000164900&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=10"
   },
   {
-    "name": "바이브랩 리바이브 테라피 헤어 브로우 래쉬 세럼 (헤어라인 겸용)",
-    "price": "19,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018343308ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000183433&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=13"
-  },
-  {
-    "name": "[단독기획]헤어플러스 단백질 본드 앰플 에센스 70ml 2입",
-    "price": "15,200",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0012/A00000012553946ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000125539&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=14"
-  },
-  {
-    "name": "롱테이크 샌달우드/블랙티앤피그 인텐시브 헤어오일 40ML",
-    "price": "21,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021099310ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000210993&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=15"
-  },
-  {
+    "brand": "실크테라피",
     "name": "[한정기획/열보호] 실크테라피 에센스 145KIT(130+15) 3종 택1 (손상/극손상용)",
     "price": "27,400",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017758810ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000177588&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=16"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000177588&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=11"
   },
   {
-    "name": "어노브 실크 오일 헤어에센스 70ml 2종 택1 (텐더블룸/웜페탈)",
+    "brand": "몽클로스",
+    "name": "[떡짐NO 은은한잔향] 몽클로스 슈퍼 실키 에센스 85ml",
+    "price": "15,300",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022930810ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000229308&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=12"
+  },
+  {
+    "brand": "모레모",
+    "name": "[8월올영픽/미피 콜라보][열보호]모레모 프로 리페어 헤어에센스 80ml 기획/단품 4종(향 선택)",
+    "price": "13,800",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022873511ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000228735&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=13"
+  },
+  {
+    "brand": "헤어플러스",
+    "name": "[단독기획]헤어플러스 단백질 본드 앰플 에센스 70ml 2입",
     "price": "16,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015418810ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000154188&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=17"
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0012/A00000012553947ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000125539&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=14"
   },
   {
+    "brand": "미쟝센",
+    "name": "[열보호] 미쟝센 퍼펙트 세럼 80ML(오리지널/스타일링/하이드레이팅/리치)",
+    "price": "8,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016490225ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000164902&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=15"
+  },
+  {
+    "brand": "커리쉴",
+    "name": "커리쉴 실키 오일 세럼 70ml",
+    "price": "22,500",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014495919ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000144959&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=16"
+  },
+  {
+    "brand": "셀러버",
     "name": "셀러버 아르간 오일 헤어 퍼퓸 에센스 100ml(5가지향)",
     "price": "11,600",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018912115ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000189121&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=18"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000189121&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=17"
   },
   {
-    "name": "마쉐리 헤어 오일 EX 60mL",
-    "price": "8,400",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0001/A00000001481701ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000014817&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=19"
+    "brand": "실크테라피",
+    "name": "실크테라피 모이스처 에센스 130ml 기획(+헤어밴드)(마이멜로디 콜라보)",
+    "price": "18,500",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023256903ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000232569&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=18"
   },
   {
-    "name": "[쥴리 PICK] 피노 프리미엄 터치 헤어 오일 70ml",
-    "price": "12,800",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018446716ko.png?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000184467&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=20"
+    "brand": "센녹",
+    "name": "[8월올영픽/단독기획]센녹 헤어 퍼퓸 미스트 60ml 2종 단품/기획(베이비블러셔기획/슬리핑로즈)",
+    "price": "22,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022873617ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000228736&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=19"
   },
   {
-    "name": "[열보호] 미쟝센 살롱10 프로페셔널 시카 세라마이드 오일세럼 60+25ML 기획 / 단품",
-    "price": "18,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019760110ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000197601&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=21"
+    "brand": "힐링버드",
+    "name": "힐링버드 리바이브 리페어 헤어오일 70ml",
+    "price": "10,970",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020413913ko.png?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000204139&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=20"
   },
   {
-    "name": "디오디너리 헤어 케어 멀티-펩타이드 세럼 포 헤어 덴시티 60ml",
-    "price": "34,600",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014739002ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000147390&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=22"
+    "brand": "바이브랩",
+    "name": "바이브랩 리바이브 테라피 헤어 브로우 래쉬 세럼 (헤어라인 겸용)",
+    "price": "20,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018343308ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000183433&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=21"
   },
   {
+    "brand": "헤어플러스",
+    "name": "[단독기획/열보호] 헤어플러스 단백질 본드 워터에센스 모던피치 증정기획(200ml+50ml)",
+    "price": "19,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022766905ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000227669&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=22"
+  },
+  {
+    "brand": "어노브",
+    "name": "어노브 실크 오일 헤어에센스 70ml 2종 택1 (텐더블룸/웜페탈)",
+    "price": "19,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015418810ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000154188&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=23"
+  },
+  {
+    "brand": "박준뷰티랩",
     "name": "[끈적임NO] 박준뷰티랩 LPP 단백질 헤어오일 105ml (헤어 에센스) 손상모 딥 데미지",
-    "price": "9,900",
+    "price": "10,900",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016958018ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000169580&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=23"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000169580&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=24"
   },
   {
-    "name": "[열보호/백호PICK] 트리셀 리커버리 헤어 오일 에센스 100ml",
-    "price": "14,400",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018298513ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000182985&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=24"
+    "brand": "피노",
+    "name": "[쥴리 PICK] 피노 프리미엄 터치 헤어 오일 70ml 2입",
+    "price": "23,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018992515ko.png?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000189925&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=25"
   },
   {
-    "name": "커리쉴 실키 오일 세럼 70ml",
-    "price": "25,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014495919ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000144959&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=25"
+    "brand": "피노",
+    "name": "[쥴리 PICK] 피노 프리미엄 터치 헤어 오일 70ml",
+    "price": "16,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018446716ko.png?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000184467&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=26"
   },
   {
-    "name": "[기프트박스][윤기 케어] 케라스타즈 엘릭서 얼팀 헤어 오일 30ml 단품/기획",
-    "price": "36,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021204820ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000212048&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=26"
-  },
-  {
+    "brand": "모로칸오일",
     "name": "모로칸오일 헤어 트리트먼트 라이트 50ml (펌프 포함)",
     "price": "33,300",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014503137ko.jpg?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000145031&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=27"
   },
   {
-    "name": "커리쉴 모이스처 글로우 헤어 에센스 70ml",
-    "price": "21,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014495812ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000144958&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=28"
-  },
-  {
-    "name": "[열보호]모레모 프로 리페어 헤어에센스 80ml 기획/단품 2종(향 선택)",
-    "price": "13,800",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022873506ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000228735&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=29"
-  },
-  {
-    "name": "[1&1더블/샤인광채] 그로우어스 데미지 테라피 헤어 오일 65ml 더블 기획",
-    "price": "28,800",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021002416ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000210024&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=30"
-  },
-  {
+    "brand": "모로칸오일",
     "name": "[대용량] 모로칸오일 헤어 트리트먼트 라이트 100ml(펌프포함)",
     "price": "57,600",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019855002ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000198550&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=31"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000198550&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=28"
   },
   {
-    "name": "아베다 데미지 레미디 데일리 헤어 리페어 100ml",
-    "price": "55,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0012/A00000012369413ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000123694&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=32"
+    "brand": "실크테라피",
+    "name": "[열보호/캐치티니핑 콜라보] 실크테라피 에센스 180ml 대용량 기획 2종 택1 한정기획",
+    "price": "25,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022509609ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225096&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=29"
   },
   {
-    "name": "[열보호 / 그린시트러스 향]로레알파리 헤어오일 모히또 100ml",
-    "price": "15,890",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020013903ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000200139&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=33"
+    "brand": "로레알",
+    "name": "[한소희PICK]로레알파리 드림랭스 노 헤어컷 크림 200ml(노워시)",
+    "price": "16,200",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015258626ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000152586&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=30"
   },
   {
-    "name": "[NEW]센녹 샤이니 에브리데이 헤어에센스 애프터배스50ml",
-    "price": "24,700",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022992901ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000229929&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=34"
+    "brand": "올라플렉스",
+    "name": "[깔살롱 우기쌤 PICK] 올라플렉스 No.7 본딩 오일 30ml",
+    "price": "49,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020681005ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000206810&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=31"
   },
   {
-    "name": "[열보호][스우파PICK/15ml 증정] 제니하우스 살롱테라피 데미지케어 헤어오일세럼 100ml 기획세트",
-    "price": "23,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020979911ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000209799&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=35"
+    "brand": "무백",
+    "name": "무백 멜팅 콜라겐 포밍에센스 200ml",
+    "price": "22,400",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018934611ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000189346&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=32"
   },
   {
-    "name": "[NEW/신상출시] 센녹 헤어 퍼퓸 미스트 60ml 2종 (베이비블러셔/슬리핑로즈)",
-    "price": "22,800",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022873607ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000228736&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=36"
+    "brand": "케라스타즈",
+    "name": "[리바이탈라이징] 케라스타즈 크로놀로지스트 퍼퓸오일 30ml",
+    "price": "45,220",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022917001ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000229170&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=33"
   },
   {
-    "name": "츠바키 프리미엄 트리트먼트 워터 210ml 기획(+헤어마스크 40g 증정)",
-    "price": "14,200",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022702302ko.png?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000227023&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=37"
+    "brand": "시세이도 프로페셔널",
+    "name": "시세이도 프로페셔널 서브리믹 원더쉴드 본품 125ml",
+    "price": "45,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019163709ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000191637&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=34"
   },
   {
+    "brand": "헤어플러스",
+    "name": "[화해1위] 헤어플러스 단백질 본드 앰플 에센스 70ml(노워시 헤어팩)",
+    "price": "9,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0011/A00000011970725ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000119707&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=35"
+  },
+  {
+    "brand": "롱테이크",
+    "name": "롱테이크 샌달우드/블랙티앤피그 인텐시브 헤어오일 40ML",
+    "price": "21,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021099314ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000210993&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=36"
+  },
+  {
+    "brand": "피노",
     "name": "[벨 PICK] 피노 프리미엄 터치 헤어 오일 세럼 에어리 스무스 70ml",
     "price": "12,800",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020821014ko.png?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000208210&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=38"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000208210&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=37"
   },
   {
-    "name": "AZH 실키 에센스 헤어 오일 _헤어 디자이너가 직접 만든 헤어 오일",
-    "price": "43,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020385806ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000203858&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=39"
+    "brand": "차홍",
+    "name": "차홍 인텐시브 리페어 에센스 2종 택1",
+    "price": "18,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013153206ko.jpeg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000131532&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=38"
   },
   {
-    "name": "로레알 프로페셔널 메탈 디엑스 오일 50ml",
-    "price": "39,200",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022750704ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000227507&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=40"
+    "brand": "케라스타즈",
+    "name": "[기프트박스][윤기 케어] 케라스타즈 엘릭서 얼팀 헤어 오일 30ml 단품/기획",
+    "price": "38,760",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021204820ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000212048&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=39"
   },
   {
-    "name": "힐링버드 리바이브 리페어 헤어오일 70ml",
-    "price": "18,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020413913ko.png?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000204139&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=41"
+    "brand": "파이브센스",
+    "name": "파이브센스 헤어 오일 50ml",
+    "price": "38,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021380603ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000213806&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=40"
   },
   {
-    "name": "[단독기획/열보호] 헤어플러스 단백질 본드 앰플 모던피치 70ml 2입",
-    "price": "17,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022521308ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225213&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=42"
-  },
-  {
+    "brand": "핑크고스트",
     "name": "[열보호] 핑크고스트 헤어시럽 2종 택1",
-    "price": "39,000",
+    "price": "33,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020787325ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000207873&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=43"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000207873&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=41"
   },
   {
-    "name": "차홍 리-하이드라 오리진 에센스 120ml (수분 케어)",
-    "price": "32,400",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015182504ko.jpeg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000151825&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=44"
+    "brand": "헤어플러스",
+    "name": "[온라인단독/대용량]헤어플러스 단백질 본드 오일 에센스 150ml(프로틴 세럼)",
+    "price": "15,100",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0012/A00000012957812ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000129578&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=42"
   },
   {
-    "name": "[7월올영픽] 시세이도 프로페셔널 서브리믹 원더쉴드 본품 125ml",
-    "price": "31,500",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019163708ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000191637&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=45"
+    "brand": "그로우어스",
+    "name": "[1&1더블/샤인광채] 그로우어스 데미지 테라피 헤어 오일 65ml 더블 기획",
+    "price": "28,800",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021002416ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000210024&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=43"
   },
   {
-    "name": "[NEW] 커리쉴 리츄얼 폴리쉬 오일 150ml",
-    "price": "31,500",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020657507ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000206575&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=46"
+    "brand": "미쟝센",
+    "name": "[열보호] 미쟝센 살롱10 프로페셔널 시카 세라마이드 오일세럼 60+25ML(기획/단품)",
+    "price": "17,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019760110ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000197601&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=44"
   },
   {
-    "name": "[단독기획] 에이르보 10 블룸오브샤론 헤어오일 100ml (20ml 증정)",
-    "price": "30,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016559709ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000165597&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=47"
+    "brand": "센녹",
+    "name": "[8월올영픽/단독선런칭]센녹 샤이니 에브리데이 헤어에센스 애프터배스50ml",
+    "price": "24,400",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022992908ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000229929&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=45"
   },
   {
+    "brand": "케라시스",
+    "name": "케라시스 케라마이드 극손상 클리닉 세럼 70ml",
+    "price": "6,750",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0001/A00000001450603ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000014506&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=46"
+  },
+  {
+    "brand": "모로칸오일",
+    "name": "모로칸오일 헤어 트리트먼트 25ml",
+    "price": "23,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014507611ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000145076&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=47"
+  },
+  {
+    "brand": "로레알",
+    "name": "[열보호][시트러스 향] 로레알파리 헤어오일 모히또 100ml",
+    "price": "23,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020013903ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000200139&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=48"
+  },
+  {
+    "brand": "차홍",
     "name": "[열보호] 차홍 인텐시브 드라이 에센스 80ml (열손상 보호 케어)",
-    "price": "25,500",
+    "price": "22,950",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015004303ko.jpeg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000150043&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=48"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000150043&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=49"
   },
   {
-    "name": "[열보호] 이브로쉐 호호바 리페어 포티파잉 헤어세럼 100ml (극손상모용)",
-    "price": "23,100",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020052401ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000200524&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=49"
-  },
-  {
-    "name": "디오디너리 헤어 케어 멀티-펩타이드 세럼 포 헤어 덴시티 30ml",
-    "price": "22,800",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017929301ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000179293&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=50"
-  },
-  {
-    "name": "[열보호] 탐즈 시그니처 에센스 100ml PLUMERIA",
-    "price": "22,700",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022444002ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000224440&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=51"
-  },
-  {
-    "name": "루시도엘 아르간 헤어 오일 60ml",
-    "price": "9,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0001/A00000001403627ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000014036&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=52"
-  },
-  {
-    "name": "[샤인광채] 그로우어스 데미지 테라피 헤어 오일 65ml",
-    "price": "20,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020188013ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000201880&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=53"
-  },
-  {
-    "name": "[화해1위] 헤어플러스 단백질 본드 앰플 에센스 70ml(노워시 헤어팩)",
-    "price": "8,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0011/A00000011970725ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000119707&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=54"
-  },
-  {
-    "name": "[열보호] 커리쉴 에프터 살롱 케어 헤어 리페어 앰플 100ml",
-    "price": "20,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020255405ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000202554&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=55"
-  },
-  {
-    "name": "[단독기획/열보호] 헤어플러스 단백질 본드 워터에센스 모던피치 증정기획(200ml+50ml)",
+    "brand": "달리프",
+    "name": "달리프 퍼퓸 에센스 레이니데이향 더블 기획 (90ml+90ml)",
     "price": "19,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022766905ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000227669&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=56"
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013577608ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000135776&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=50"
   },
   {
-    "name": "[한소희PICK]로레알파리 드림랭스 노 헤어컷 크림 200ml(노워시)",
-    "price": "18,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015258626ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000152586&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=57"
+    "brand": "저스트에즈아이엠",
+    "name": "[1위 무화과 헤어퍼퓸] 아이엠 헤어 퍼퓸 미스트 100ml 기획(+5일키트)",
+    "price": "19,800",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023024505ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230245&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=51"
   },
   {
-    "name": "모로칸오일 스무딩 로션 75ml",
-    "price": "14,400",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014570414ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000145704&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=58"
+    "brand": "커리쉴",
+    "name": "커리쉴 모이스처 글로우 헤어 에센스 70ml",
+    "price": "16,800",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014495812ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000144958&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=52"
   },
   {
+    "brand": "실크테라피",
+    "name": "[열보호/캐치티니핑 콜라보] 실크테라피 프리즈컨트롤 헤어 크림 150ml + 캐치티니핑 수면안대 추가 증정 기획",
+    "price": "24,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022509815ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225098&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=53"
+  },
+  {
+    "brand": "몽클로스",
+    "name": "[손상모 종결템] 몽클로스 미라클 샤인 에센스 85ml",
+    "price": "15,300",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022930909ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000229309&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=54"
+  },
+  {
+    "brand": "아로마티카",
+    "name": "아로마티카 리츄얼 헤어 오일 자스민&베티버 50ml",
+    "price": "11,200",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017604301ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176043&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=55"
+  },
+  {
+    "brand": "박준뷰티랩",
     "name": "박준뷰티랩 아르간 헤어오일 120ml",
     "price": "10,800",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0012/A00000012129113ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000121291&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=59"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000121291&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=56"
   },
   {
-    "name": "루시도엘 아르간 헤어 리치 오일 60ml",
+    "brand": "루시도엘",
+    "name": "루시도엘 아르간 헤어 트리트먼트 폴리쉬 오일 (시어 글로스) 60ml",
     "price": "9,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020778938ko.jpeg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000207789&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=57"
+  },
+  {
+    "brand": "라온느",
+    "name": "[30ml증정] 라온느 블랙 아르간 헤어 오일 에센스 100ml 기획",
+    "price": "8,400",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018472313ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000184723&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=58"
+  },
+  {
+    "brand": "루시도엘",
+    "name": "루시도엘 아르간 헤어 오일 60ml",
+    "price": "15,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0001/A00000001403627ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000014036&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=59"
+  },
+  {
+    "brand": "루시도엘",
+    "name": "루시도엘 아르간 헤어 리치 오일 60ml",
+    "price": "15,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0001/A00000001403718ko.jpeg?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000014037&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=60"
   },
   {
-    "name": "루시도엘 아르간 헤어 트리트먼트 폴리쉬 오일 (시어 글로스) 60ml",
-    "price": "9,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020778937ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000207789&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=61"
+    "brand": "마쉐리",
+    "name": "마쉐리 헤어 오일 EX 60mL",
+    "price": "14,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0001/A00000001481701ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000014817&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=61"
   },
   {
-    "name": "케라시스 케라마이드 극손상 클리닉 세럼 70ml",
-    "price": "13,500",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0001/A00000001450603ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000014506&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=62"
-  },
-  {
-    "name": "[초고농축 영양케어] 쿤달 울트라 헤어세럼 100ml 4종 택 1",
-    "price": "11,500",
+    "brand": "쿤달",
+    "name": "[초고농축 영양케어] 쿤달 울트라 헤어세럼 100ml 3종 택 1",
+    "price": "10,900",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0010/A00000010491128ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000104911&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=63"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000104911&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=62"
   },
   {
+    "brand": "루시도엘",
     "name": "루시도엘 아르간 헤어 리페어 오일 60ml",
-    "price": "15,000",
+    "price": "9,900",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0011/A00000011908417ko.jpeg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000119084&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=64"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000119084&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=63"
   },
   {
+    "brand": "아베다",
+    "name": "아베다 데미지 레미디 데일리 헤어 리페어 100ml",
+    "price": "48,450",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0012/A00000012369413ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000123694&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=64"
+  },
+  {
+    "brand": "아베다",
     "name": "아베다 라이트 엘리먼츠 스무딩 플루이드 100ml",
-    "price": "48,000",
+    "price": "40,800",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0012/A00000012370602ko.jpg?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000123706&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=65"
   },
   {
+    "brand": "아베다",
     "name": "아베다 체리 아몬드 소프트닝 리브-인 컨디셔너 200ml",
-    "price": "49,000",
+    "price": "41,650",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0012/A00000012776404ko.jpg?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000127764&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=66"
   },
   {
+    "brand": "케라시스",
     "name": "케라시스 케라마이드 극손상 리치 세럼 70ml",
-    "price": "6,900",
+    "price": "13,500",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0012/A00000012957201ko.jpg?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000129572&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=67"
   },
   {
-    "name": "[온라인단독/대용량]헤어플러스 단백질 본드 오일 에센스 150ml(프로틴 세럼)",
-    "price": "18,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0012/A00000012957810ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000129578&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=68"
-  },
-  {
+    "brand": "달리프",
     "name": "달리프 베러 퍼퓸 에센스 레이니데이향 90ml",
     "price": "12,400",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013132907ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000131329&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=69"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000131329&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=68"
   },
   {
-    "name": "차홍 인텐시브 리페어 에센스 2종 택1",
-    "price": "21,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013153206ko.jpeg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000131532&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=70"
-  },
-  {
-    "name": "달리프 퍼퓸 에센스 레이니데이향 더블 기획 (90ml+90ml)",
-    "price": "24,800",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013577608ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000135776&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=71"
-  },
-  {
+    "brand": "달리프",
     "name": "달리프 퍼퓸 에센스 일랑로즈향 더블 기획 (90ml+90ml)",
-    "price": "24,800",
+    "price": "19,900",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013577808ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000135778&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=72"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000135778&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=69"
   },
   {
+    "brand": "달리프",
     "name": "달리프 글램 트루에센스 오리지널 100ml (꿀광에센스)",
     "price": "12,600",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013847410ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000138474&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=73"
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013847411ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000138474&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=70"
   },
   {
+    "brand": "달리프",
     "name": "달리프 글램 트루에센스 오리지널 더블 기획 (100ml+100ml)",
-    "price": "21,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013906717ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000139067&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=74"
+    "price": "12,600",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0013/A00000013906718ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000139067&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=71"
   },
   {
-    "name": "모로칸오일 헤어 트리트먼트 25ml",
-    "price": "20,700",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014507611ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000145076&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=75"
+    "brand": "모로칸오일",
+    "name": "모로칸오일 스무딩 로션 75ml",
+    "price": "14,400",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014570414ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000145704&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=72"
   },
   {
+    "brand": "모로칸오일",
     "name": "모로칸오일 멘딩 인퓨전 세럼 75ml (모발 끝 손상 케어)",
-    "price": "35,100",
+    "price": "28,080",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014570705ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000145707&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=76"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000145707&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=73"
   },
   {
+    "brand": "모로칸오일",
     "name": "[노워시 컨디셔너]모로칸오일 올 인 원 리브인 컨디셔너 50ml",
     "price": "17,100",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015098713ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000150987&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=77"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000150987&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=74"
   },
   {
+    "brand": "아베다",
     "name": "아베다 보태니컬 리페어 스트렝쓰닝 리브-인 트리트먼트 100ml",
-    "price": "55,000",
+    "price": "48,450",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015167128ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000151671&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=78"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000151671&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=75"
   },
   {
+    "brand": "차홍",
+    "name": "차홍 리-하이드라 오리진 에센스 120ml (수분 케어)",
+    "price": "36,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015182504ko.jpeg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000151825&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=76"
+  },
+  {
+    "brand": "차홍",
     "name": "[열보호] 차홍 인텐시브 드라이 에센스 120ml (열손상 보호 케어)",
-    "price": "38,000",
+    "price": "34,200",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015182703ko.jpeg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000151827&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=79"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000151827&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=77"
   },
   {
+    "brand": "탱글엔젤",
     "name": "탱글엔젤 런던부케 오일세럼 100ml",
-    "price": "18,900",
+    "price": "15,900",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015205706ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000152057&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=80"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000152057&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=78"
   },
   {
+    "brand": "아로마티카",
     "name": "아로마티카 리츄얼 헤어 오일 라벤더&패츌리 50ml",
-    "price": "16,800",
+    "price": "24,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0015/A00000015883911ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000158839&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=81"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000158839&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=79"
   },
   {
+    "brand": "제니하우스",
     "name": "제니하우스 인텐시브 프로틴 앰플 100ml",
-    "price": "15,000",
+    "price": "12,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016495905ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000164959&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=82"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000164959&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=80"
   },
   {
+    "brand": "에이르보",
     "name": "에이르보 10 블룸오브샤론 헤어 3종 중 택1",
-    "price": "30,000",
+    "price": "21,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016615009ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000166150&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=83"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000166150&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=81"
   },
   {
+    "brand": "아베다",
     "name": "아베다 보태니컬 리페어 스트렝쓰닝 오버나이트 세럼 100ml",
-    "price": "54,400",
+    "price": "57,800",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016841617ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000168416&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=84"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000168416&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=82"
   },
   {
+    "brand": "모로칸오일",
     "name": "모로칸오일 브룸 드 마로크 헤어 & 바디 프래그런스 미스트 30ml",
     "price": "22,500",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016918401ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000169184&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=85"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000169184&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=83"
   },
   {
+    "brand": "루시도엘",
     "name": "루시도엘 아르간 헤어 트리트먼트 오일 더블기획(60ml+60ml)",
-    "price": "28,000",
+    "price": "18,200",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017091003ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000170910&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=86"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000170910&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=84"
   },
   {
-    "name": "아로마티카 리츄얼 헤어 오일 자스민&베티버 50ml",
-    "price": "26,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017604301ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176043&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=87"
-  },
-  {
+    "brand": "엘라스틴",
     "name": "엘라스틴 아미노펩타이드 헤어 세럼 페어프리지아 150ml(극손상)",
     "price": "7,950",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017658905ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176589&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=88"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176589&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=85"
   },
   {
+    "brand": "엘라스틴",
     "name": "엘라스틴 아미노펩타이드 헤어 세럼 블랑머스크 150ml (극손상)",
-    "price": "12,900",
+    "price": "7,450",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017659107ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176591&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=89"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176591&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=86"
   },
   {
+    "brand": "엘라스틴",
     "name": "엘라스틴 아미노펩타이드 헤어 세럼 150ml 2종 택 1 (페어프리지아/블랑쉬머스크)",
     "price": "7,950",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017659201ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176592&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=90"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176592&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=87"
   },
   {
+    "brand": "로마",
     "name": "로마 너리싱 오일 트리트먼트 100ml",
     "price": "48,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017694203ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176942&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=91"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176942&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=88"
   },
   {
-    "name": "로마 리브인 컨디셔너 237ml",
-    "price": "31,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017694503ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176945&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=92"
-  },
-  {
+    "brand": "클로란",
     "name": "[열보호] 클로란 쿠푸아수 리페어링 시카 세럼 100ml",
-    "price": "32,000",
+    "price": "25,600",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017749501ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000177495&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=93"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000177495&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=89"
   },
   {
+    "brand": "디오디너리",
+    "name": "디오디너리 헤어 케어 멀티-펩타이드 세럼 포 헤어 덴시티 30ml",
+    "price": "22,800",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017929301ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000179293&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=90"
+  },
+  {
+    "brand": "탱글엔젤",
     "name": "탱글엔젤 런던부케 오일세럼 100ml 2개입",
-    "price": "22,900",
+    "price": "32,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017965205ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000179652&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=94"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000179652&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=91"
   },
   {
+    "brand": "다슈",
+    "name": "[변우석 Pick]다슈 프로 에어리 폴리쉬 오일 100ml 기획세트(+10ml 증정)",
+    "price": "16,840",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018257707ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000182577&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=92"
+  },
+  {
+    "brand": "톤28",
     "name": "톤28 헤어 퍼퓸 미스트 100ml (바오밥코튼/데튤립플라워 택1)",
     "price": "27,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018271006ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000182710&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=95"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000182710&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=93"
   },
   {
-    "name": "톤28 헤어 퍼퓸 미스트 100ml + 테라피 브러쉬 세트 (바오밥코튼/데튤립플라워 택1)",
-    "price": "27,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018277506ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000182775&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=96"
+    "brand": "트리셀",
+    "name": "[백호PICK/열보호] 트리셀 리커버리 헤어 오일 에센스 100ml",
+    "price": "14,400",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018298513ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000182985&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=94"
   },
   {
+    "brand": "루시도엘",
     "name": "[열보호] 루시도엘 하이 데미지 리페어 헤어 오일 90ml",
-    "price": "22,000",
+    "price": "14,900",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018303602ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000183036&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=97"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000183036&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=95"
   },
   {
+    "brand": "루시도엘",
     "name": "[열보호] 루시도엘 하이 데미지 리페어 헤어 밀크90g",
-    "price": "14,890",
+    "price": "22,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018303702ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000183037&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=98"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000183037&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=96"
   },
   {
+    "brand": "달리프",
     "name": "[웨트헤어] 달리프 글램 폴리쉬 오일 100ml(라이트타입/젖은머리스타일링)",
-    "price": "17,900",
+    "price": "21,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018444513ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000184445&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=99"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000184445&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=97"
   },
   {
-    "name": "[30ml증정] 라온느 블랙 아르간 헤어 오일 에센스 100ml 기획",
-    "price": "10,500",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018472313ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000184723&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=100"
-  },
-  {
-    "name": "[쥴리 PICK] 피노 프리미엄 터치 헤어 오일 70ml 2입",
-    "price": "28,800",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0018/A00000018992515ko.png?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000189925&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=101"
-  },
-  {
+    "brand": "달리프",
     "name": "[웨트헤어] 달리프 폴리쉬 오일 100ml+12ml증정 (라이트타입/젖은머리스타일링)",
     "price": "17,900",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019030712ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000190307&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=102"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000190307&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=98"
   },
   {
+    "brand": "오디드",
     "name": "오디드 밀크프로틴 인텐시브 헤어오일 100ML 4종",
-    "price": "14,900",
+    "price": "11,900",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019193801ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000191938&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=103"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000191938&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=99"
   },
   {
+    "brand": "AZH",
     "name": "AZH 데일리 러스터 헤어오일_헤어 디자이너가 직접 만든 헤어오일",
-    "price": "31,000",
+    "price": "34,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019332109ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000193321&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=104"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000193321&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=100"
   },
   {
+    "brand": "커리쉴",
     "name": "[단독기획]커리쉴 실키 오일 세럼 70ml 기획(+샴푸 50ml+마스크 30ml+파우치)",
-    "price": "42,000",
+    "price": "29,400",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0019/A00000019883620ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000198836&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=105"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000198836&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=101"
   },
   {
+    "brand": "이브로쉐",
+    "name": "[열보호] 이브로쉐 호호바 리페어 포티파잉 헤어세럼 100ml (극손상모용)",
+    "price": "18,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020052401ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000200524&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=102"
+  },
+  {
+    "brand": "그로우어스",
+    "name": "[샤인광채] 그로우어스 데미지 테라피 헤어 오일 65ml",
+    "price": "20,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020188013ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000201880&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=103"
+  },
+  {
+    "brand": "아로마티카",
     "name": "[내츄럴 헤어 퍼퓸] 아로마티카 리플레니싱 헤어 미스트 자스민&베티버 100ml",
-    "price": "25,000",
+    "price": "11,200",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020240802ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000202408&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=106"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000202408&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=104"
   },
   {
-    "name": "[미국 공식수입]폴미첼 슈퍼 스키니 세럼 150ml[미용실 에센스]",
-    "price": "23,600",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020275707ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000202757&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=107"
+    "brand": "커리쉴",
+    "name": "[열보호] 커리쉴 에프터 살롱 케어 헤어 리페어 앰플 100ml",
+    "price": "25,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020255405ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000202554&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=105"
   },
   {
+    "brand": "AZH",
+    "name": "AZH 실키 에센스 헤어 오일 _헤어 디자이너가 직접 만든 헤어 오일",
+    "price": "47,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020385806ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000203858&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=106"
+  },
+  {
+    "brand": "모로칸오일",
     "name": "[보색 오일]모로칸오일 헤어 트리트먼트 퍼플 50ml (펌프 포함)",
     "price": "35,100",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020566404ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000205664&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=108"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000205664&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=107"
   },
   {
-    "name": "모로칸오일 인텐스 스무딩 세럼 50ml",
-    "price": "35,100",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020627701ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000206277&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=109"
+    "brand": "커리쉴",
+    "name": "[NEW] 커리쉴 리츄얼 폴리쉬 오일 150ml",
+    "price": "35,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020657507ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000206575&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=108"
   },
   {
-    "name": "올라플렉스 No.7 본딩 오일 30ml(2404)",
-    "price": "49,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020681001ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000206810&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=110"
+    "brand": "피노",
+    "name": "[쥴리 PICK] 피노 프리미엄 터치 헤어 오일 70ml 더블기획(+10ml증정)",
+    "price": "32,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020668801ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000206688&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=109"
   },
   {
+    "brand": "제니하우스",
+    "name": "[열보호][스우파PICK/15ml 증정] 제니하우스 살롱테라피 데미지케어 헤어오일세럼 100ml 기획세트",
+    "price": "18,400",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020979911ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000209799&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=110"
+  },
+  {
+    "brand": "제이숲",
+    "name": "제이숲 실크 케라틴 헤어 오일 에센스 2X 80ml 단독 기획(+워터팩 50g)",
+    "price": "33,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020994607ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000209946&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=111"
+  },
+  {
+    "brand": "제이숲",
     "name": "제이숲 실크 케라틴 헤어 오일 에센스 2X 80ml",
-    "price": "32,000",
+    "price": "16,110",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021074903ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000210749&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=111"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000210749&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=112"
   },
   {
-    "name": "[스마트톡 증정] 아도르 퍼퓸 헤어 오일 80ml 한정기획 2종 택 1(뚜들리 콜라보)",
-    "price": "32,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021084222ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000210842&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=112"
+    "brand": "케라스타즈",
+    "name": "[올영픽][윤기 케어] 케라스타즈 엘릭서 얼팀 헤어 오일 75ml 기획/ 30ml",
+    "price": "75,100",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021204913ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000212049&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=113"
   },
   {
+    "brand": "케라스타즈",
     "name": "[윤기 케어] 케라스타즈 엘릭서 얼팀 헤어 오일 리필 75ml",
-    "price": "50,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021205005ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000212050&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=113"
+    "price": "52,490",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021205004ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000212050&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=114"
   },
   {
+    "brand": "르네휘테르",
     "name": "[손상 모발 케어] 르네휘테르 까리떼 프로페셔널 에센스 100ml",
-    "price": "35,910",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021267105ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000212671&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=114"
-  },
-  {
-    "name": "[벨 PICK] 피노 프리미엄 터치 헤어 오일 세럼 에어리 스무스 70ml 2입 (+ 마스크 40g)",
-    "price": "27,200",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021312706ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000213127&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=115"
-  },
-  {
-    "name": "[염색 모발 케어] 르네휘테르 컬러 글로우 염색모케어 에센스 100ml",
     "price": "42,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021331305ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000213313&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=116"
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021267105ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000212671&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=115"
   },
   {
-    "name": "파이브센스 헤어 오일 50ml",
-    "price": "40,850",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021380603ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000213806&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=117"
-  },
-  {
-    "name": "보다나 힛 밸런스 24/7 글로시 헤어 오일 100ml",
+    "brand": "피노",
+    "name": "[벨 PICK] 피노 프리미엄 터치 헤어 오일 세럼 에어리 스무스 70ml 2입 (+ 마스크 40g)",
     "price": "32,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021312706ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000213127&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=116"
+  },
+  {
+    "brand": "르네휘테르",
+    "name": "[염색 모발 케어] 르네휘테르 컬러 글로우 염색모케어 에센스 100ml",
+    "price": "35,700",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021331305ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000213313&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=117"
+  },
+  {
+    "brand": "보다나",
+    "name": "보다나 힛 밸런스 24/7 글로시 헤어 오일 100ml",
+    "price": "28,900",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021515904ko.jpg?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000215159&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=118"
   },
   {
+    "brand": "케라스타즈",
     "name": "[염색모 케어] 케라스타즈 크로마 압솔뤼 오일 75ml 단품/기획",
-    "price": "73,400",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021623415ko.jpg?l=ko",
+    "price": "75,100",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021623412ko.jpg?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000216234&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=119"
   },
   {
+    "brand": "브리티시엠",
     "name": "브리티시엠 아나토 헤어 오일 70ml",
-    "price": "32,000",
+    "price": "25,600",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022229403ko.jpg?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000222294&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=120"
   },
   {
+    "brand": "어반트라이브",
     "name": "[고농축 앰플오일] 어반트라이브 스무스 트리트먼트 오일 55ml",
-    "price": "34,000",
+    "price": "32,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022397804ko.png?l=ko",
     "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000223978&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=121"
   },
   {
+    "brand": "탐즈",
+    "name": "[열보호] 탐즈 시그니처 에센스 100ml PLUMERIA",
+    "price": "22,700",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022444005ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000224440&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=122"
+  },
+  {
+    "brand": "피노",
+    "name": "피노 프리미엄 터치 헤어 오일 70ml 2입 기획",
+    "price": "22,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022487405ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000224874&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=123"
+  },
+  {
+    "brand": "케라스타즈",
     "name": "[리바이탈라이징] 케라스타즈 크로놀로지스트 퍼퓸오일 리필 75ml",
-    "price": "60,800",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022502702ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225027&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=122"
+    "price": "62,180",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022502701ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225027&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=124"
   },
   {
+    "brand": "케라스타즈",
     "name": "[리바이탈라이징] 케라스타즈 크로놀로지스트 퍼퓸오일 75ml",
-    "price": "83,700",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022502911ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225029&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=123"
+    "price": "85,600",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022502909ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225029&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=125"
   },
   {
-    "name": "[열보호/캐치티니핑 콜라보] 실크테라피 에센스 180ml 대용량 기획 2종 택1 한정기획",
-    "price": "43,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022509609ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225096&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=124"
+    "brand": "헤어플러스",
+    "name": "[단독기획/열보호] 헤어플러스 단백질 본드 앰플 모던피치 70ml 2입",
+    "price": "16,100",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022521308ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225213&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=126"
   },
   {
-    "name": "[열보호/캐치티니핑 콜라보] 실크테라피 프리즈컨트롤 헤어 크림 150ml + 캐치티니핑 수면안대 추가 증정 기획",
-    "price": "24,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022509815ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225098&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=125"
-  },
-  {
+    "brand": "케라스타즈",
     "name": "케라스타즈 시몽 테르미크 외 리브인 트리트먼트 5종",
-    "price": "49,800",
+    "price": "52,490",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022564402ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225644&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=126"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225644&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=127"
   },
   {
-    "name": "[열보호] 헤드스파7 V8 슬리키 헤어미스트 기획세트",
-    "price": "27,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022651810ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000226518&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=127"
+    "brand": "케라스타즈",
+    "name": "[열보호] 케라스타즈 시몽 테르미크 노워시 트리트먼트 150ml 더블기획",
+    "price": "123,500",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022567701ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225677&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=128"
   },
   {
+    "brand": "탐즈",
     "name": "탐즈 시그니처 쉴드 크림 100ml AIRY MUSK",
     "price": "22,700",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022742301ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000227423&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=128"
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022742305ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000227423&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=129"
   },
   {
-    "name": "[리바이탈라이징] 케라스타즈 크로놀로지스트 퍼퓸오일 30ml",
-    "price": "52,600",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022917001ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000229170&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=129"
+    "brand": "로레알 프로페셔널",
+    "name": "로레알 프로페셔널 메탈 디엑스 오일 50ml",
+    "price": "41,650",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022750705ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000227507&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=130"
   },
   {
-    "name": "아베다 미라큘러스 오일 하이-샤인 헤어 컨센트레이트",
-    "price": "62,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022946601ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000229466&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=130"
+    "brand": "아베다",
+    "name": "[NEW] 아베다 미라큘러스 오일 하이-샤인 헤어 컨센트레이트 오일",
+    "price": "52,700",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022946602ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000229466&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=131"
   },
   {
-    "name": "[NEW] 아이엠 헤어 오일 60ml",
+    "brand": "저스트에즈아이엠",
+    "name": "[꿀광윤기/손상보호] 아이엠 헤어 오일 60ml",
     "price": "25,200",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023032401ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230324&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=131"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230324&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=132"
   },
   {
-    "name": "[NEW] 아이엠 헤어 밀크 130ml",
+    "brand": "저스트에즈아이엠",
+    "name": "[열보호/빠른흡수] 아이엠 헤어 밀크 130ml",
     "price": "21,600",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023032701ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230327&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=132"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230327&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=133"
   },
   {
+    "brand": "케라스타즈",
     "name": "[염색모 케어] 케라스타즈 크로마 압솔뤼 오일 리필 75ml",
-    "price": "65,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023036402ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230364&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=133"
+    "price": "52,490",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023036401ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230364&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=134"
   },
   {
+    "brand": "아누코",
+    "name": "[열보호] 아누코 본드 앤 리페어 헤어 오일 75ml",
+    "price": "24,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023052701ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230527&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=135"
+  },
+  {
+    "brand": "아닐로",
     "name": "아닐로 로지나잇 퍼퓸 헤어 미스트 100ml",
     "price": "35,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/B00000020051401ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=B000000200514&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=134"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=B000000200514&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=136"
   },
   {
+    "brand": "아닐로",
     "name": "아닐로 로지나잇 리페어 헤어 에센스 50ml",
     "price": "20,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/B00000020052001ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=B000000200520&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=135"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=B000000200520&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=137"
   },
   {
+    "brand": "아닐로",
     "name": "아닐로 로지나잇 리페어 3종세트(샴푸+앰플트리트먼트+에센스)",
     "price": "62,400",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/B00000020052901ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=B000000200529&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=136"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=B000000200529&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=138"
   },
   {
-    "name": "[열보호] 케라시스 히트액티브 극손상 220ml",
-    "price": "15,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0011/A00000011607007ko.png?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000116070&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=137"
+    "brand": "디오디너리",
+    "name": "디오디너리 헤어 케어 멀티-펩타이드 세럼 포 헤어 덴시티 60ml",
+    "price": "34,600",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014739002ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000147390&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=139"
   },
   {
-    "name": "제이숲 퍼플제이 워터글로우 100ml",
-    "price": "18,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0012/A00000012221407ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000122214&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=138"
-  },
-  {
+    "brand": "에이르보",
     "name": "에이르보 10 블룸오브샤론 헤어오일 100ml",
-    "price": "30,000",
+    "price": "21,000",
     "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016396107ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000163961&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=139"
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000163961&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=140"
   },
   {
-    "name": "[단독기획] 줄라이미 퍼퓸 헤어 에센스 블랙베리 80ml+헤어 에센스 30ml(추가 증정)",
-    "price": "13,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016891702ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000168917&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=140"
+    "brand": "에이르보",
+    "name": "[단독기획] 에이르보 10 블룸오브샤론 헤어오일 100ml (20ml 증정)",
+    "price": "21,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016559709ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000165597&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=141"
   },
   {
-    "name": "보타믹스 위드우드 밸런싱 비건 헤어오일 100ml",
-    "price": "17,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0016/A00000016894304ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000168943&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=141"
+    "brand": "로마",
+    "name": "로마 리브인 컨디셔너 237ml",
+    "price": "31,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017694503ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000176945&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=142"
   },
   {
-    "name": "존프리다 프리즈 이즈 라이트웨이트 세럼 50mL",
-    "price": "19,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0017/A00000017705702ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000177057&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=142"
+    "brand": "모로칸오일",
+    "name": "모로칸오일 인텐스 스무딩 세럼 50ml",
+    "price": "35,100",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020627701ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000206277&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=143"
   },
   {
-    "name": "[NEW] 제이숲 실크 케라틴 헤어 오일 에센스 2X 80ml 단독 기획(+워터팩 50g)",
-    "price": "20,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020994607ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000209946&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=143"
+    "brand": "폴미첼",
+    "name": "(미용실 헤어에센스)폴미첼 슈퍼 스키니 세럼 150ml(리뉴얼)",
+    "price": "25,900",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023233501ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000232335&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=144"
   },
   {
-    "name": "[열보호] 제니하우스 살롱테라피 데미지케어 헤어오일세럼 100ml",
-    "price": "23,000",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022349206ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000223492&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=144"
+    "brand": "로레알",
+    "name": "로레알파리 엑스트라오디네리 오일 체리 우드 100ml 기획 (+리치브라운 30ml 증정) (2411)",
+    "price": "11,510",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A000000232549185ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000232549&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=145"
   },
   {
-    "name": "[한정기획/열보호] 헤어플러스 단백질 본드 워터에센스 모던피치 200ml 기획(+50ml, 멀티밤)(2505)",
-    "price": "19,900",
-    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A00000022521209ko.jpg?l=ko",
-    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225212&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=145"
+    "brand": "케라스타즈",
+    "name": "[열보호] 케라스타즈 매니페스토 컬링 에센스 150ml",
+    "price": "57,000",
+    "image": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0023/A00000023298202ko.jpg?l=ko",
+    "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000232982&dispCatNo=100000100040013&t_page=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EA%B4%80&t_click=%ED%97%A4%EC%96%B4%EC%97%90%EC%84%BC%EC%8A%A4_%EC%A0%84%EC%B2%B4__%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=146"
   }
 ]

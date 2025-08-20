@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.smartbrush.smartbrush_backend.entity.DiagnosisEntity;
 import com.smartbrush.smartbrush_backend.jwt.JwtProvider;
 import com.smartbrush.smartbrush_backend.repository.DiagnosisRepository;
+import com.smartbrush.smartbrush_backend.service.ScalpMbtiServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
@@ -29,6 +30,7 @@ public class DiagnosisController {
 
     private final DiagnosisRepository diagnosisRepository;
     private final JwtProvider jwtProvider;
+    private final ScalpMbtiServiceImpl scalpMbtiService;
 
     @PostMapping(value = "/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     @Operation(summary = "두피 이미지 진단", description = "이미지를 업로드하면 AI 진단 결과를 반환합니다.")
@@ -55,7 +57,7 @@ public class DiagnosisController {
             HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
 
             ResponseEntity<String> response = new RestTemplate().postForEntity(
-                    "http://43.200.172.135:8000//ai", requestEntity, String.class);
+                    "http://43.200.172.135:8000/ai", requestEntity, String.class);
 
             // 응답 파싱
             ObjectMapper objectMapper = new ObjectMapper();
@@ -64,7 +66,18 @@ public class DiagnosisController {
 
             // 계산 결과 → 저장 대상
             Map<String, Object> result = calculateDiagnosisResult(parsed);
-            String jsonString = objectMapper.writeValueAsString(result);  // ✅ 여기 수정
+
+            // MBTI 계산 및 포함
+            int sensitivity = ((Number) result.getOrDefault("scalpSensitivityValue", 55)).intValue();
+            int sebum       = ((Number) result.getOrDefault("sebumLevelValue", 55)).intValue();
+            int scaling     = ((Number) result.getOrDefault("scalingValue", 55)).intValue();
+            int density     = ((Number) result.getOrDefault("densityValue", 55)).intValue();
+            int thickness   = ((Number) result.getOrDefault("poreSizeValue", 60)).intValue();
+
+            String mbti = scalpMbtiService.getMbti(sensitivity, sebum, scaling, density, thickness);
+            result.put("scalpMbti", mbti); // 응답/저장 모두에 포함
+
+            String jsonString = objectMapper.writeValueAsString(result); // MBTI 포함 후 직렬화
 
             // 사용자 인증 및 토큰 처리
             String token = jwtProvider.resolveToken(request);
@@ -75,7 +88,7 @@ public class DiagnosisController {
 
             String email = jwtProvider.getEmail(token);
 
-            // 진단 결과 저장
+            // 진단 결과 저장 (오늘자 upsert)
             DiagnosisEntity existing = diagnosisRepository
                     .findByEmailAndDiagnosedDate(email, LocalDate.now())
                     .orElse(null);
@@ -121,12 +134,7 @@ public class DiagnosisController {
 
     private int average(Integer... values) {
         int sum = 0, count = 0;
-        for (Integer v : values) {
-            if (v != null) {
-                sum += v;
-                count++;
-            }
-        }
+        for (Integer v : values) if (v != null) { sum += v; count++; }
         return count == 0 ? 55 : Math.round((float) sum / count);
     }
 
@@ -138,26 +146,10 @@ public class DiagnosisController {
 
     private String getLabelFromScore(int value, String type) {
         return switch (type) {
-            case "sebum" -> {
-                if (value <= 30) yield "양호";
-                else if (value <= 55) yield "보통";
-                else yield "심각";
-            }
-            case "density" -> {
-                if (value <= 30) yield "심각";
-                else if (value <= 55) yield "보통";
-                else yield "양호";
-            }
-            case "thickness" -> { // 모발 굵기
-                if (value >= 60) yield "양호";
-                else if (value >= 40) yield "보통";
-                else yield "심각";
-            }
-            default -> { // 두피 민감도, 각질 등 (낮을수록 양호)
-                if (value >= 70) yield "심각";
-                else if (value >= 40) yield "보통";
-                else yield "양호";
-            }
+            case "sebum" -> (value <= 30) ? "양호" : (value <= 55) ? "보통" : "심각";
+            case "density" -> (value <= 30) ? "심각" : (value <= 55) ? "보통" : "양호";
+            case "thickness" -> (value >= 60) ? "양호" : (value >= 40) ? "보통" : "심각";
+            default -> (value >= 70) ? "심각" : (value >= 40) ? "보통" : "양호";
         };
     }
 
@@ -212,5 +204,3 @@ public class DiagnosisController {
         return result;
     }
 }
-
-

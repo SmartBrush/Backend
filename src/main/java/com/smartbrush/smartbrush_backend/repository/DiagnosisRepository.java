@@ -10,4 +10,5 @@ import java.util.Optional;
 public interface DiagnosisRepository extends JpaRepository<DiagnosisEntity, Long> {
     Optional<DiagnosisEntity> findByEmailAndDiagnosedDate(String email, LocalDate date);
     List<DiagnosisEntity> findAllByEmail(String email); // 전체 기록 조회용
+    Optional<DiagnosisEntity> findTopByEmailOrderByDiagnosedDateDesc(String email);
 }
