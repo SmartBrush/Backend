@@ -14,4 +14,7 @@ public class CommunityResponseDTO {
     private String author;
     private String profileImage;
     private LocalDateTime createdAt;
+    private long likeCount;
+    private boolean liked;
+    private long commentCount;
 }
