@@ -103,25 +103,7 @@ public class AuthEntity {
     @Column(length = 512)
     private String refreshToken;
 
-    @ManyToMany
-    @JoinTable(
-            name = "post_likes",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "post_id")
-    )
-    @Builder.Default
-    @JsonIgnore
-    private List<Post> likedPosts = new ArrayList<>();
 
-    @ManyToMany
-    @JoinTable(
-            name = "post_scraps",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "post_id")
-    )
-    @Builder.Default
-    @JsonIgnore
-    private List<Post> scrappedPosts  = new ArrayList<>();
 
     // 제품 추천 위시리스트
     @ManyToMany(fetch = FetchType.EAGER)

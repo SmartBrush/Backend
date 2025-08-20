@@ -9,4 +9,5 @@ import java.util.List;
 public interface CommentRepository extends JpaRepository<Comment, Long> {
     List<Comment> findByCommunityOrderByCreatedAtAsc(Community community);
     List<Comment> findByUserId(Long userId);
+    long countByCommunity_Id(Long communityId);
 }
