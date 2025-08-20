@@ -49,9 +49,6 @@ Thumbs.db
 application.yml
 application.properties
 
-# JSON 테스트 파일 무시
-*.json
-
 ### 기타 ###
 HELP.md
 
