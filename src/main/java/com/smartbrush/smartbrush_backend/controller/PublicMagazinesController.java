@@ -34,4 +34,14 @@ public class PublicMagazinesController {
     public List<Magazine> getRecommend() {
         return magazineRepository.getRecommend();
     }
+
+    @Operation(summary = "칼럼 검색", description = "title을 기준으로 칼럼 검색")
+    @Transactional(readOnly = true)
+    @GetMapping("/search")
+    public List<Magazine> searchMagazines(@RequestParam String keyword,
+                                          @RequestParam(defaultValue = "20") int size) {
+        int safe = Math.max(1, size);
+        Pageable pageable = PageRequest.of(0, safe);
+        return magazineRepository.findByTitleContainingIgnoreCase(keyword, pageable).getContent();
+    }
 }
