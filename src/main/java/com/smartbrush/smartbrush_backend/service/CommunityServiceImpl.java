@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -137,5 +138,20 @@ public class CommunityServiceImpl implements CommunityService {
                 .liked(liked)
                 .commentCount(commentCount)
                 .build();
+    }
+
+    @Override
+    public List<CommunityResponseDTO> searchCommunities(String keyword, Long userId) {
+        if (keyword == null || keyword.isBlank()) {
+            return Collections.emptyList();
+        }
+        String kw = keyword.trim();
+
+        List<Community> entities = communityRepository
+                .findByTitleContainingIgnoreCaseOrContentContainingIgnoreCaseOrderByIdDesc(kw, kw);
+
+        return entities.stream()
+                .map(e -> this.getCommunity(e.getId(), userId))
+                .toList();
     }
 }
