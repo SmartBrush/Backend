@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/public/magazines")
+@RequestMapping("/api/magazines")
 @Tag(name = "칼럼 리스트", description = "보그 칼럼 리스트 입니다.")
 public class PublicMagazinesController {
 
@@ -21,10 +21,17 @@ public class PublicMagazinesController {
 
     @Operation(summary = "전체 칼럼", description = "size로 개수 제한 (기본 20)")
     @Transactional(readOnly = true)
-    @GetMapping
+    @GetMapping("/all")
     public List<Magazine> getAll(@RequestParam(defaultValue = "20") int size) {
         int safe = Math.max(1, size);
         Pageable pageable = PageRequest.of(0, safe);
         return magazineRepository.findAll(pageable).getContent();
+    }
+
+    @Operation(summary = "칼럼 10개 추천", description = "칼럼 10개를 랜덤으로 추천합니다.")
+    @Transactional(readOnly = true)
+    @GetMapping("/recommend")
+    public List<Magazine> getRecommend() {
+        return magazineRepository.getRecommend();
     }
 }
