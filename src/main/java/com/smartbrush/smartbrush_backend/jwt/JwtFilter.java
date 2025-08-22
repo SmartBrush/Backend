@@ -76,11 +76,13 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
+import org.springframework.util.AntPathMatcher;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 import java.util.Optional;
 
 @Component
@@ -90,6 +92,25 @@ public class JwtFilter extends OncePerRequestFilter {
     private final JwtProvider jwtProvider;
     private final AuthRepository authRepository;
     private final ObjectMapper objectMapper = new ObjectMapper();
+
+    private static final AntPathMatcher pathMatcher = new AntPathMatcher();
+    private static final List<String> WHITELIST = List.of(
+            "/api/auth/**",
+            "/v3/api-docs/**",
+            "/swagger-ui/**",
+            "/swagger-resources/**",
+            "/webjars/**",
+            "/error"
+    );
+
+    @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
+        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+            return true;
+        }
+        String uri = request.getRequestURI();
+        return WHITELIST.stream().anyMatch(pattern -> pathMatcher.match(pattern, uri));
+    }
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,
