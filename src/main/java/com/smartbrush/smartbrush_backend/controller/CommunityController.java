@@ -88,9 +88,13 @@ public class CommunityController {
         return ResponseEntity.ok(communityService.getMyLikedPostIds(userId));
     }
 
-
-
-
-
-
+    @Operation(summary = "게시글 검색", description = "제목/본문 통합 검색")
+    @GetMapping("/search")
+    public ResponseEntity<List<CommunityResponseDTO>> searchCommunities(
+            @RequestParam String keyword,
+            @RequestAttribute(required = false) Long userId
+    ) {
+        var result = communityService.searchCommunities(keyword, userId);
+        return ResponseEntity.status(ResponseCode.SUCCESS.getStatus()).body(result);
+    }
 }

@@ -19,4 +19,6 @@ public interface CommunityService {
     long unlike(Long communityId, Long userId);
 
     List<Long> getMyLikedPostIds(Long memberId);
+
+    List<CommunityResponseDTO> searchCommunities(String keyword, Long userId);
 }

@@ -64,7 +64,6 @@ public class DiagnosisController {
                         .body("AI 서버 오류: " + response.getStatusCode() + " - " + response.getBody());
             }
 
-
             // ===== Flask 응답 파싱: { count, results: { 질환: {class_index, confidence}, ... } }
             ObjectMapper objectMapper = new ObjectMapper();
             Map<String, Object> root = objectMapper.readValue(response.getBody(), new TypeReference<>() {});
@@ -91,6 +90,7 @@ public class DiagnosisController {
             if (token == null || !jwtProvider.validateToken(token)) {
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("유효하지 않은 토큰입니다.");
             }
+
             String email = jwtProvider.getEmail(token);
 
             String jsonString = objectMapper.writeValueAsString(result);
