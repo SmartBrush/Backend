@@ -31,7 +31,7 @@ public class CaptureController {
     private final DiagnosisImageService diagnosisImageService;
 
     // 내부 망으로 ESP32에서 캡처 이미지를 제공하는 엔드포인트(필요 시 수정)
-    private static final String ESP32_CAPTURE_URL = "http://172.20.10.3/capture";
+    private static final String ESP32_CAPTURE_URL = "http://172.20.10.14/capture";
 
     @GetMapping("/capture")
     public ResponseEntity<String> triggerEsp32RepeatedCapture(HttpServletRequest request) {
