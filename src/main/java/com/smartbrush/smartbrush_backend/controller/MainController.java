@@ -79,37 +79,6 @@ public class MainController {
         }
     }
 
-
-//    @GetMapping("/main/diagnosis/today")
-//    @Operation(summary = "오늘의 진단 결과", description = "오늘 날짜에 진단된 점수와 상태만 반환합니다.")
-//    public ResponseEntity<?> getTodayDiagnosisSummary(HttpServletRequest request) {
-//        try {
-//            String token = jwtProvider.resolveToken(request);
-//            String email = jwtProvider.getEmail(token);
-//
-//            // 오늘 날짜의 진단 결과 조회
-//            Optional<DiagnosisEntity> todayOpt = diagnosisRepository.findByEmailAndDiagnosedDate(email, LocalDate.now());
-//
-//            if (todayOpt.isEmpty()) {
-//                return ResponseEntity.ok(Map.of(
-//                        "message", "오늘 진단 결과가 없습니다."
-//                ));
-//            }
-//
-//            ObjectMapper mapper = new ObjectMapper();
-//            Map<String, Object> resultMap = mapper.readValue(todayOpt.get().getResultJson(), Map.class);
-//
-//            Map<String, Object> summary = new HashMap<>();
-//            summary.put("score", resultMap.get("score"));
-//            summary.put("status", resultMap.get("status"));
-//
-//            return ResponseEntity.ok(summary);
-//
-//        } catch (Exception e) {
-//            return ResponseEntity.internalServerError().body("조회 실패: " + e.getMessage());
-//        }
-//    }
-
     @GetMapping("/main/diagnosis/today")
     @Operation(summary = "오늘의 진단 결과", description = "오늘 날짜에 진단된 점수, 상태, 사용자 이름, 날짜를 반환합니다.")
     public ResponseEntity<?> getTodayDiagnosisSummary(HttpServletRequest request) {
@@ -146,6 +115,93 @@ public class MainController {
 
             return ResponseEntity.ok(summary);
 
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().body("조회 실패: " + e.getMessage());
+        }
+    }
+
+
+    @GetMapping("/main/diagnosis/status")
+    @Operation(summary = "날짜별 status만 조회", description = "사용자의 모든 진단 기록에서 날짜와 status만 반환합니다.")
+    public ResponseEntity<?> getOnlyStatusAll(HttpServletRequest request) {
+        try {
+            String token = jwtProvider.resolveToken(request);
+            String email = jwtProvider.getEmail(token);
+
+            List<DiagnosisEntity> records = diagnosisRepository.findAllByEmail(email);
+            ObjectMapper mapper = new ObjectMapper();
+
+            // 날짜 → status 슬림 리스트로 변환 + 날짜 오름차순
+            List<Map<String, String>> body = records.stream()
+                    .sorted(Comparator.comparing(DiagnosisEntity::getDiagnosedDate)) // 날짜 오름차순
+                    .map(rec -> {
+                        String status = "";
+                        try {
+                            Map<String, Object> m = mapper.readValue(rec.getResultJson(), Map.class);
+                            Object s = m.get("status");
+                            status = (s == null) ? "" : String.valueOf(s);
+                        } catch (Exception ignored) {}
+
+                        return Map.of(
+                                "date", rec.getDiagnosedDate().toString(),
+                                "status", status
+                        );
+                    })
+                    .toList();
+
+            return ResponseEntity.ok(body);
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().body("조회 실패: " + e.getMessage());
+        }
+    }
+
+
+    @GetMapping("/main/diagnosis/status/by-month")
+    @Operation(
+            summary = "월별 날짜별 status만 조회 (빈 날짜 포함)",
+            description = "요청한 연/월의 모든 날짜에 대해 status를 반환합니다. 진단 없는 날은 빈 문자열로 내려갑니다."
+    )
+    public ResponseEntity<?> getOnlyStatusByMonth(
+            HttpServletRequest request,
+            @RequestParam int year,
+            @RequestParam int month // 1~12
+    ) {
+        try {
+            String token = jwtProvider.resolveToken(request);
+            String email = jwtProvider.getEmail(token);
+
+            LocalDate start = LocalDate.of(year, month, 1);
+            LocalDate end = start.withDayOfMonth(start.lengthOfMonth());
+
+            // 해당 월 범위의 기록 조회
+            List<DiagnosisEntity> records = diagnosisRepository
+                    .findAllByEmailAndDiagnosedDateBetween(email, start, end);
+
+            ObjectMapper mapper = new ObjectMapper();
+
+            // 날짜별 status 맵 (동일 날짜 여러건 있으면 "마지막으로 본 값"으로 덮어쓰기)
+            Map<LocalDate, String> statusByDate = new HashMap<>();
+            for (DiagnosisEntity rec : records) {
+                String status = "";
+                try {
+                    Map<String, Object> m = mapper.readValue(rec.getResultJson(), Map.class);
+                    Object s = m.get("status");
+                    status = (s == null) ? "" : String.valueOf(s);
+                } catch (Exception ignored) {}
+
+                statusByDate.put(rec.getDiagnosedDate(), status);
+            }
+
+            // 월 전체 날짜 채워 넣기 (없으면 "")
+            List<Map<String, String>> filled = new ArrayList<>();
+            for (LocalDate cur = start; !cur.isAfter(end); cur = cur.plusDays(1)) {
+                filled.add(Map.of(
+                        "date", cur.toString(),
+                        "status", statusByDate.getOrDefault(cur, "")
+                ));
+            }
+
+            return ResponseEntity.ok(filled);
         } catch (Exception e) {
             return ResponseEntity.internalServerError().body("조회 실패: " + e.getMessage());
         }

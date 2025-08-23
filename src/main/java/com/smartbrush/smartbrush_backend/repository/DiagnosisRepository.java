@@ -11,4 +11,8 @@ public interface DiagnosisRepository extends JpaRepository<DiagnosisEntity, Long
     Optional<DiagnosisEntity> findByEmailAndDiagnosedDate(String email, LocalDate date);
     List<DiagnosisEntity> findAllByEmail(String email); // 전체 기록 조회용
     Optional<DiagnosisEntity> findTopByEmailOrderByDiagnosedDateDesc(String email);
+
+    // 월별 조회
+    List<DiagnosisEntity> findAllByEmailAndDiagnosedDateBetween(String email, LocalDate start, LocalDate end);
+
 }

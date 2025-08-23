@@ -37,12 +37,11 @@ public class SecurityConfig {
                                 "/webjars/**",
                                 "/api/auth/**",
                                 "/api/community/**",
-                                "/api/post/**",
-                                "/api/mypage/**"
+                                "/api/post/**"
                         ).permitAll()
 
                         // 인증 필요 API
-                        .requestMatchers("/api/uv/**", "/api/question/**", "/api/image/upload" ).authenticated()
+                        .requestMatchers("/api/uv/**", "/api/question/**", "/api/image/upload", "/api/main/**", "/api/mypage/**" ).authenticated()
 
                         .anyRequest().permitAll()
                 )
