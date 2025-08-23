@@ -44,6 +44,7 @@ public class ProfileInfoServiceImpl implements ProfileInfoService {
         userProfileInfoRepository.save(info);
 
         return new UserProfileInfoResponseDTO(
+                true, // ✅ 프로필 존재
                 info.getId(),
                 authEntity.getNickname(),
                 authEntity.getEmail(),
@@ -66,28 +67,28 @@ public class ProfileInfoServiceImpl implements ProfileInfoService {
     @Override
     @Transactional(readOnly = true)
     public UserProfileInfoResponseDTO getProfileInfo(AuthEntity authEntity) {
-        UserProfileInfo info = userProfileInfoRepository.findByAuthEntity(authEntity)
-                .orElseThrow(() -> new RuntimeException("저장된 프로필 정보가 없습니다."));
-
-        return new UserProfileInfoResponseDTO(
-                info.getId(),
-                authEntity.getNickname(),
-                authEntity.getEmail(),
-                info.getGender(),
-                info.getAge(),
-                info.getHairLength(),
-                info.getDyedOrPermedRecently(),
-                info.getFamilyHairLoss(),
-                info.getWearHatFrequently(),
-                info.getUvExposureLevel(),
-                info.getWashingFrequency(),
-                info.getUsingProducts().stream().map(Enum::name).toList(),
-                info.getEatingHabits().stream().map(Enum::name).collect(Collectors.toSet()),
-                info.getScalpSymptoms().stream().map(Enum::name).collect(Collectors.toSet()),
-                info.getSleepDuration(),
-                info.getSleepStartTime()
-        );
-
+        return userProfileInfoRepository.findByAuthEntity(authEntity)
+                .map(info -> new UserProfileInfoResponseDTO(
+                        true, // 프로필 유무
+                        info.getId(),
+                        authEntity.getNickname(),
+                        authEntity.getEmail(),
+                        info.getGender(),
+                        info.getAge(),
+                        info.getHairLength(),
+                        info.getDyedOrPermedRecently(),
+                        info.getFamilyHairLoss(),
+                        info.getWearHatFrequently(),
+                        info.getUvExposureLevel(),
+                        info.getWashingFrequency(),
+                        info.getUsingProducts().stream().map(Enum::name).toList(),
+                        info.getEatingHabits().stream().map(Enum::name).collect(Collectors.toSet()),
+                        info.getScalpSymptoms().stream().map(Enum::name).collect(Collectors.toSet()),
+                        info.getSleepDuration(),
+                        info.getSleepStartTime()
+                ))
+                // 없을 때 false로 내려감
+                .orElse(UserProfileInfoResponseDTO.empty(authEntity.getNickname(), authEntity.getEmail()));
     }
 }
 
