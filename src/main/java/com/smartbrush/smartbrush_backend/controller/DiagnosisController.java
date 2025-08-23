@@ -57,7 +57,7 @@ public class DiagnosisController {
             HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
 
             ResponseEntity<String> response = new RestTemplate().postForEntity(
-                    "http://localhost:5000/ai", requestEntity, String.class);
+                    "http://54.180.149.92:8000/ai", requestEntity, String.class);
 
             if (!response.getStatusCode().is2xxSuccessful()) {
                 return ResponseEntity.status(HttpStatus.BAD_GATEWAY)
@@ -214,3 +214,4 @@ public class DiagnosisController {
     }
 
 }
+
