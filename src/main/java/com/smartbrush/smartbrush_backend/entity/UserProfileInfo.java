@@ -115,19 +115,33 @@ public class UserProfileInfo {
 
     @Builder.Default
     @ElementCollection(fetch = FetchType.LAZY)
-    @CollectionTable(name = "user_hair_products", joinColumns = @JoinColumn(name = "user_id"))
+    @CollectionTable(
+            name = "user_hair_products",
+            joinColumns = @JoinColumn(name = "user_profile_info_id") // ← 요렇게!
+    )
+    @Column(name = "product_type", length = 64)
     @Enumerated(EnumType.STRING)
     private Set<HairProductType> usingProducts = new HashSet<>();
 
+    // Eating habits
     @Builder.Default
     @ElementCollection(fetch = FetchType.LAZY)
-    @CollectionTable(name = "user_eating_habits", joinColumns = @JoinColumn(name = "user_id"))
+    @CollectionTable(
+            name = "user_eating_habits",
+            joinColumns = @JoinColumn(name = "user_profile_info_id")
+    )
+    @Column(name = "eating_habit", length = 64)
     @Enumerated(EnumType.STRING)
     private Set<EatingHabit> eatingHabits = new HashSet<>();
 
+    // Scalp symptoms
     @Builder.Default
     @ElementCollection(fetch = FetchType.LAZY)
-    @CollectionTable(name = "user_scalp_symptoms", joinColumns = @JoinColumn(name = "user_id"))
+    @CollectionTable(
+            name = "user_scalp_symptoms",
+            joinColumns = @JoinColumn(name = "user_profile_info_id")
+    )
+    @Column(name = "scalp_symptom", length = 64)
     @Enumerated(EnumType.STRING)
     private Set<ScalpSymptom> scalpSymptoms = new HashSet<>();
 
