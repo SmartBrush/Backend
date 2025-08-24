@@ -46,7 +46,7 @@ public class S3Uploader {
             PutObjectRequest req = new PutObjectRequest(bucket, key, in, meta);
             amazonS3.putObject(req);
 
-            // ✅ ‘객체 URL(경로형)’로 고정: https://s3.{region}.amazonaws.com/{bucket}/{key}
+            // ‘객체 URL(경로형)’로 고정: https://s3.{region}.amazonaws.com/{bucket}/{key}
             String objectUrl = "https://s3." + region + ".amazonaws.com/" + bucket + "/" + key;
 
             log.info("✅ S3 업로드 성공: {}", objectUrl);
