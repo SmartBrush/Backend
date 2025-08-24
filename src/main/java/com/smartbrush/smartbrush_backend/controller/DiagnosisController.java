@@ -1,10 +1,234 @@
+//package com.smartbrush.smartbrush_backend.controller;
+//
+//import com.fasterxml.jackson.core.type.TypeReference;
+//import com.fasterxml.jackson.databind.ObjectMapper;
+//import com.smartbrush.smartbrush_backend.entity.DiagnosisEntity;
+//import com.smartbrush.smartbrush_backend.jwt.JwtProvider;
+//import com.smartbrush.smartbrush_backend.repository.DiagnosisRepository;
+//import com.smartbrush.smartbrush_backend.service.ScalpMbtiServiceImpl;
+//import io.swagger.v3.oas.annotations.Operation;
+//import io.swagger.v3.oas.annotations.tags.Tag;
+//import jakarta.servlet.http.HttpServletRequest;
+//import lombok.RequiredArgsConstructor;
+//import org.springframework.core.io.ByteArrayResource;
+//import org.springframework.http.*;
+//import org.springframework.util.LinkedMultiValueMap;
+//import org.springframework.util.MultiValueMap;
+//import org.springframework.web.bind.annotation.*;
+//import org.springframework.web.client.RestTemplate;
+//import org.springframework.web.multipart.MultipartFile;
+//
+//import java.time.LocalDate;
+//import java.util.HashMap;
+//import java.util.List;
+//import java.util.Map;
+//
+//@RestController
+//@RequiredArgsConstructor
+//@RequestMapping("/api/diagnosis")
+//@Tag(name = "AI 두피 진단", description = "AI 진단 결과 API")
+//public class DiagnosisController {
+//
+//    private final DiagnosisRepository diagnosisRepository;
+//    private final JwtProvider jwtProvider;
+//    private final ScalpMbtiServiceImpl scalpMbtiService;
+//
+//    @PostMapping(value = "/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+//    @Operation(summary = "두피 이미지 진단", description = "이미지를 업로드하면 AI 진단 결과(여러장 평균)를 반환합니다.")
+//    public ResponseEntity<?> diagnose(
+//            @RequestPart("image") List<MultipartFile> images,
+//            HttpServletRequest request
+//    ) {
+//        try {
+//            HttpHeaders headers = new HttpHeaders();
+//            headers.setContentType(MediaType.MULTIPART_FORM_DATA);
+//
+//            MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
+//
+//            // 여러 장을 같은 키("image")로 추가
+//            for (MultipartFile image : images) {
+//                byte[] bytes = image.getBytes();
+//                ByteArrayResource resource = new ByteArrayResource(bytes) {
+//                    @Override public String getFilename() { return image.getOriginalFilename(); }
+//                };
+//                body.add("image", resource);
+//            }
+//
+//            HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
+//
+//            ResponseEntity<String> response = new RestTemplate().postForEntity(
+//                    "http://54.180.149.92:8000/ai", requestEntity, String.class);
+//
+//            if (!response.getStatusCode().is2xxSuccessful()) {
+//                return ResponseEntity.status(HttpStatus.BAD_GATEWAY)
+//                        .body("AI 서버 오류: " + response.getStatusCode() + " - " + response.getBody());
+//            }
+//
+//            // ===== Flask 응답 파싱: { count, results: { 질환: {class_index, confidence}, ... } }
+//            ObjectMapper objectMapper = new ObjectMapper();
+//            Map<String, Object> root = objectMapper.readValue(response.getBody(), new TypeReference<>() {});
+//            Object resultsObj = root.get("results");
+//
+//            // calculateDiagnosisResult에서 쓰던 형태로 변환
+//            Map<String, Map<String, Object>> parsed =
+//                    objectMapper.convertValue(resultsObj, new TypeReference<Map<String, Map<String, Object>>>() {});
+//
+//            // ===== 계산/저장 =====
+//            Map<String, Object> result = calculateDiagnosisResult(parsed);
+//
+//            int sensitivity = ((Number) result.getOrDefault("scalpSensitivityValue", 55)).intValue();
+//            int sebum       = ((Number) result.getOrDefault("sebumLevelValue", 55)).intValue();
+//            int scaling     = ((Number) result.getOrDefault("scalingValue", 55)).intValue();
+//            int density     = ((Number) result.getOrDefault("densityValue", 55)).intValue();
+//            int thickness   = ((Number) result.getOrDefault("poreSizeValue", 60)).intValue();
+//
+//            String mbti = scalpMbtiService.getMbti(sensitivity, sebum, scaling, density, thickness);
+//            result.put("scalpMbti", mbti);
+//
+//            // 인증/토큰 확인
+//            String token = jwtProvider.resolveToken(request);
+//            if (token == null || !jwtProvider.validateToken(token)) {
+//                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("유효하지 않은 토큰입니다.");
+//            }
+//
+//            String email = jwtProvider.getEmail(token);
+//
+//            String jsonString = objectMapper.writeValueAsString(result);
+//
+//            DiagnosisEntity existing = diagnosisRepository
+//                    .findByEmailAndDiagnosedDate(email, LocalDate.now())
+//                    .orElse(null);
+//
+//            if (existing != null) {
+//                existing.updateResult(jsonString);
+//                diagnosisRepository.save(existing);
+//            } else {
+//                diagnosisRepository.save(new DiagnosisEntity(email, LocalDate.now(), jsonString));
+//            }
+//
+//            return ResponseEntity.ok(result);
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("진단 실패: " + e.getMessage());
+//        }
+//    }
+//
+//    // ===== 계산 유틸 =====
+//
+//    private int getScoreFromClassIndex(Integer classIndex) {
+//        if (classIndex == null) return 55;
+//        return switch (classIndex) {
+//            case 0 -> 30;
+//            case 1, 2 -> 55;
+//            case 3 -> 80;
+//            default -> 55;
+//        };
+//    }
+//
+//    private int getInvertedScoreFromClassIndex(Integer classIndex) {
+//        if (classIndex == null) return 55;
+//        return switch (classIndex) {
+//            case 0 -> 80;
+//            case 1, 2 -> 55;
+//            case 3 -> 30;
+//            default -> 55;
+//        };
+//    }
+//
+//    private int average(Integer... values) {
+//        int sum = 0, count = 0;
+//        for (Integer v : values) if (v != null) { sum += v; count++; }
+//        return count == 0 ? 55 : Math.round((float) sum / count);
+//    }
+//
+//    private String getStatusFromScore(double score) {
+//        if (score <= 4.0) return "심각";
+//        else if (score <= 6.5) return "보통";
+//        else return "양호";
+//    }
+//
+//    private String getLabelFromScore(int value, String type) {
+//        return switch (type) {
+//            case "sebum" -> (value <= 30) ? "양호" : (value <= 55) ? "보통" : "심각";
+//            case "density" -> (value <= 30) ? "심각" : (value <= 55) ? "보통" : "양호";
+//            case "thickness" -> (value >= 60) ? "양호" : (value >= 40) ? "보통" : "심각";
+//            default -> (value >= 70) ? "심각" : (value >= 40) ? "보통" : "양호";
+//        };
+//    }
+//
+//    /**
+//     * Flask의 평균 결과(Map<질환, {class_index, confidence}> 형태)를 받아
+//     * 최종 지표/라벨/점수로 변환하는 순수 함수.
+//     */
+//    private Map<String, Object> calculateDiagnosisResult(Map<String, Map<String, Object>> parsed) {
+//        Integer 민감도 = average(
+//                (Integer) parsed.getOrDefault("모낭사이홍반", Map.of()).get("class_index"),
+//                (Integer) parsed.getOrDefault("모낭홍반농포", Map.of()).get("class_index")
+//        );
+//
+//        Integer 각질 = average(
+//                (Integer) parsed.getOrDefault("미세각질", Map.of()).get("class_index"),
+//                (Integer) parsed.getOrDefault("비듬", Map.of()).get("class_index")
+//        );
+//
+//        Integer 탈모 = (Integer) parsed.getOrDefault("탈모", Map.of()).get("class_index");
+//        Integer 피지 = (Integer) parsed.getOrDefault("피지과다", Map.of()).get("class_index");
+//        Integer 모발밀도 = (Integer) parsed.getOrDefault("모발밀도", Map.of()).get("class_index");
+//
+//        int scalpSensitivityValue = getScoreFromClassIndex(민감도);
+//        int scalingValue          = getScoreFromClassIndex(각질);
+//        int densityValue = getInvertedScoreFromClassIndex(탈모);
+//        int sebumLevelValue       = getScoreFromClassIndex(피지);
+//        int poreSizeValue         = getInvertedScoreFromClassIndex(모발밀도);
+//
+//        int goodSensitivity = 100 - scalpSensitivityValue;
+//        int goodScaling     = 100 - scalingValue;
+//        int goodSebum       = 100 - sebumLevelValue;
+//
+//        double rawAvg = (goodSensitivity + goodScaling + goodSebum + densityValue + poreSizeValue) / 5.0;
+//        double score  = Math.round((rawAvg / 100.0) * 10 * 10) / 10.0;
+//        String status = getStatusFromScore(score);
+//
+//        Map<String, Object> result = new HashMap<>();
+//        result.put("scalpSensitivityValue", scalpSensitivityValue);
+//        result.put("scalpSensitivityLevel", getLabelFromScore(scalpSensitivityValue, "sensitivity"));
+//
+//        result.put("densityValue", densityValue);
+//        result.put("densityLevel", getLabelFromScore(densityValue, "density"));
+//
+//        result.put("sebumLevelValue", sebumLevelValue);
+//        result.put("sebumLevel", getLabelFromScore(sebumLevelValue, "sebum"));
+//
+//        result.put("poreSizeValue", poreSizeValue);
+//        result.put("poreSizeLevel", getLabelFromScore(poreSizeValue, "thickness"));
+//
+//        result.put("scalingValue", scalingValue);
+//        result.put("scalingLevel", getLabelFromScore(scalingValue, "scaling"));
+//
+//        result.put("score", score);
+//        result.put("status", status);
+//        result.put("rawDiagnosis", parsed);
+//
+//        return result;
+//    }
+//
+//}
+//
+
+
+
+
+
 package com.smartbrush.smartbrush_backend.controller;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.smartbrush.smartbrush_backend.entity.DiagnosisEntity;
+import com.smartbrush.smartbrush_backend.entity.DiagnosisImageEntity;
 import com.smartbrush.smartbrush_backend.jwt.JwtProvider;
 import com.smartbrush.smartbrush_backend.repository.DiagnosisRepository;
+import com.smartbrush.smartbrush_backend.service.DiagnosisImageService;
 import com.smartbrush.smartbrush_backend.service.ScalpMbtiServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -16,12 +240,11 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.multipart.MultipartFile;
 
+import java.net.URI;
 import java.time.LocalDate;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @RestController
 @RequiredArgsConstructor
@@ -32,48 +255,79 @@ public class DiagnosisController {
     private final DiagnosisRepository diagnosisRepository;
     private final JwtProvider jwtProvider;
     private final ScalpMbtiServiceImpl scalpMbtiService;
+    private final DiagnosisImageService diagnosisImageService;
 
-    @PostMapping(value = "/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    @Operation(summary = "두피 이미지 진단", description = "이미지를 업로드하면 AI 진단 결과(여러장 평균)를 반환합니다.")
-    public ResponseEntity<?> diagnose(
-            @RequestPart("image") List<MultipartFile> images,
-            HttpServletRequest request
-    ) {
+    /**
+     * 프론트에서 이미지를 받지 않고,
+     * 로그인 사용자 기준으로 DB에서 최신 4장의 S3 이미지를 찾아 Flask로 전달합니다.
+     */
+    @PostMapping(value = "/upload")
+    @Operation(
+            summary = "두피 이미지 진단(최신 4장 자동 선택)",
+            description = "로그인한 사용자의 최신 4장 이미지를 S3에서 불러와 AI 서버에 전송하고, 결과를 저장/반환합니다."
+    )
+    public ResponseEntity<?> diagnose(HttpServletRequest request) {
         try {
+            // 1) 토큰 확인 및 이메일 추출
+            String token = jwtProvider.resolveToken(request);
+            if (token == null || !jwtProvider.validateToken(token)) {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("유효하지 않은 토큰입니다.");
+            }
+            String email = jwtProvider.getEmail(token);
+
+            // 2) 사용자 최신 4장 이미지 조회
+            List<DiagnosisImageEntity> latestImages = diagnosisImageService.selectTop4Images(email);
+            if (latestImages == null || latestImages.isEmpty()) {
+                return ResponseEntity.badRequest().body("해당 사용자의 이미지가 존재하지 않습니다.");
+            }
+
+            // 3) S3 URL → 바이트 다운로드
+            RestTemplate restTemplate = new RestTemplate();
+            List<byte[]> imageBytes = latestImages.stream()
+                    .map(DiagnosisImageEntity::getImageUrl)
+                    .map(url -> fetchBytes(restTemplate, url))
+                    .filter(Objects::nonNull)
+                    .limit(4)
+                    .collect(Collectors.toList());
+
+            if (imageBytes.isEmpty()) {
+                return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body("이미지 다운로드 실패");
+            }
+
+            // 4) Flask로 Multipart 전송
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.MULTIPART_FORM_DATA);
 
             MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
-
-            // 여러 장을 같은 키("image")로 추가
-            for (MultipartFile image : images) {
-                byte[] bytes = image.getBytes();
+            int idx = 1;
+            for (byte[] bytes : imageBytes) {
+                final String filename = "scalp_" + (idx++) + ".jpg";
                 ByteArrayResource resource = new ByteArrayResource(bytes) {
-                    @Override public String getFilename() { return image.getOriginalFilename(); }
+                    @Override public String getFilename() { return filename; }
                 };
                 body.add("image", resource);
             }
 
             HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
-
-            ResponseEntity<String> response = new RestTemplate().postForEntity(
-                    "http://54.180.149.92:8000/ai", requestEntity, String.class);
+            ResponseEntity<String> response = restTemplate.postForEntity(
+                    URI.create("http://54.180.149.92:8000/ai"),
+                    requestEntity,
+                    String.class
+            );
 
             if (!response.getStatusCode().is2xxSuccessful()) {
                 return ResponseEntity.status(HttpStatus.BAD_GATEWAY)
                         .body("AI 서버 오류: " + response.getStatusCode() + " - " + response.getBody());
             }
 
-            // ===== Flask 응답 파싱: { count, results: { 질환: {class_index, confidence}, ... } }
+            // 5) Flask 응답 파싱
             ObjectMapper objectMapper = new ObjectMapper();
             Map<String, Object> root = objectMapper.readValue(response.getBody(), new TypeReference<>() {});
             Object resultsObj = root.get("results");
-
-            // calculateDiagnosisResult에서 쓰던 형태로 변환
             Map<String, Map<String, Object>> parsed =
                     objectMapper.convertValue(resultsObj, new TypeReference<Map<String, Map<String, Object>>>() {});
 
-            // ===== 계산/저장 =====
+            // 6) 점수/라벨 계산 + MBTI
             Map<String, Object> result = calculateDiagnosisResult(parsed);
 
             int sensitivity = ((Number) result.getOrDefault("scalpSensitivityValue", 55)).intValue();
@@ -85,16 +339,8 @@ public class DiagnosisController {
             String mbti = scalpMbtiService.getMbti(sensitivity, sebum, scaling, density, thickness);
             result.put("scalpMbti", mbti);
 
-            // 인증/토큰 확인
-            String token = jwtProvider.resolveToken(request);
-            if (token == null || !jwtProvider.validateToken(token)) {
-                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("유효하지 않은 토큰입니다.");
-            }
-
-            String email = jwtProvider.getEmail(token);
-
+            // 7) DB 저장(당일 한 건 유지/갱신)
             String jsonString = objectMapper.writeValueAsString(result);
-
             DiagnosisEntity existing = diagnosisRepository
                     .findByEmailAndDiagnosedDate(email, LocalDate.now())
                     .orElse(null);
@@ -114,8 +360,18 @@ public class DiagnosisController {
         }
     }
 
-    // ===== 계산 유틸 =====
+    // ---- 내부 유틸 (S3 URL → byte[]) ----
+    private byte[] fetchBytes(RestTemplate restTemplate, String url) {
+        try {
+            ResponseEntity<byte[]> res = restTemplate.getForEntity(url, byte[].class);
+            if (res.getStatusCode().is2xxSuccessful() && res.getBody() != null) {
+                return res.getBody();
+            }
+        } catch (Exception ignored) {}
+        return null;
+    }
 
+    // ===== 아래 계산 유틸은 기존 그대로 =====
     private int getScoreFromClassIndex(Integer classIndex) {
         if (classIndex == null) return 55;
         return switch (classIndex) {
@@ -157,10 +413,7 @@ public class DiagnosisController {
         };
     }
 
-    /**
-     * Flask의 평균 결과(Map<질환, {class_index, confidence}> 형태)를 받아
-     * 최종 지표/라벨/점수로 변환하는 순수 함수.
-     */
+    /** Flask 평균 결과 → 최종 지표/라벨/점수 변환 */
     private Map<String, Object> calculateDiagnosisResult(Map<String, Map<String, Object>> parsed) {
         Integer 민감도 = average(
                 (Integer) parsed.getOrDefault("모낭사이홍반", Map.of()).get("class_index"),
@@ -178,7 +431,7 @@ public class DiagnosisController {
 
         int scalpSensitivityValue = getScoreFromClassIndex(민감도);
         int scalingValue          = getScoreFromClassIndex(각질);
-        int densityValue = getInvertedScoreFromClassIndex(탈모);
+        int densityValue          = getInvertedScoreFromClassIndex(탈모);
         int sebumLevelValue       = getScoreFromClassIndex(피지);
         int poreSizeValue         = getInvertedScoreFromClassIndex(모발밀도);
 
@@ -212,6 +465,4 @@ public class DiagnosisController {
 
         return result;
     }
-
 }
-
