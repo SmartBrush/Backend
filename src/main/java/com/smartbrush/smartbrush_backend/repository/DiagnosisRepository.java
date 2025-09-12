@@ -15,4 +15,6 @@ public interface DiagnosisRepository extends JpaRepository<DiagnosisEntity, Long
     // 월별 조회
     List<DiagnosisEntity> findAllByEmailAndDiagnosedDateBetween(String email, LocalDate start, LocalDate end);
 
+    // 날짜별로 모든 진단 결과 조회
+    List<DiagnosisEntity> findAllByEmailAndDiagnosedDate(String email, LocalDate diagnosedDate);
 }

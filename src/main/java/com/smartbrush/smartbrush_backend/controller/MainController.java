@@ -206,4 +206,67 @@ public class MainController {
             return ResponseEntity.internalServerError().body("조회 실패: " + e.getMessage());
         }
     }
+
+    @GetMapping("/main/diagnosis/{date}")
+    @Operation(summary = "지정 날짜의 진단 결과 조회", description = "특정 날짜에 대한 모든 진단 결과를 반환합니다.(2025-09-01)")
+    public ResponseEntity<?> getDiagnosisByDate(HttpServletRequest request, @PathVariable String date) {
+        try {
+            String token = jwtProvider.resolveToken(request);
+            String email = jwtProvider.getEmail(token);
+
+            // 날짜 문자열을 LocalDate로 변환
+            LocalDate diagnosedDate = LocalDate.parse(date);
+
+            // 해당 날짜의 진단 결과 모두 조회
+            List<DiagnosisEntity> records = diagnosisRepository.findAllByEmailAndDiagnosedDate(email, diagnosedDate);
+
+            if (records.isEmpty()) {
+                return ResponseEntity.ok(Map.of(
+                        "message", "해당 날짜에 진단된 결과가 없습니다."
+                ));
+            }
+
+            List<Map<String, Object>> resultList = new ArrayList<>();
+            ObjectMapper mapper = new ObjectMapper();
+
+            for (DiagnosisEntity record : records) {
+                Map<String, Object> originalMap = mapper.readValue(record.getResultJson(), Map.class);
+                Map<String, Object> result = new HashMap<>();
+                result.put("date", record.getDiagnosedDate().toString());
+
+                // 묶어서 정리
+                Map<String, Object> grouped = new LinkedHashMap<>();
+                grouped.put("scalpSensitivity", Map.of(
+                        "value", originalMap.get("scalpSensitivityValue"),
+                        "level", originalMap.get("scalpSensitivityLevel")
+                ));
+                grouped.put("density", Map.of(
+                        "value", originalMap.get("densityValue"),
+                        "level", originalMap.get("densityLevel")
+                ));
+                grouped.put("sebumLevel", Map.of(
+                        "value", originalMap.get("sebumLevelValue"),
+                        "level", originalMap.get("sebumLevel")
+                ));
+                grouped.put("poreSize", Map.of(
+                        "value", originalMap.get("poreSizeValue"),
+                        "level", originalMap.get("poreSizeLevel")
+                ));
+                grouped.put("scaling", Map.of(
+                        "value", originalMap.get("scalingValue"),
+                        "level", originalMap.get("scalingLevel")
+                ));
+                grouped.put("score", originalMap.get("score"));
+                grouped.put("status", originalMap.get("status"));
+                grouped.put("rawDiagnosis", originalMap.get("rawDiagnosis"));
+
+                result.put("result", grouped);
+                resultList.add(result);
+            }
+
+            return ResponseEntity.ok(resultList);
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().body("조회 실패: " + e.getMessage());
+        }
+    }
 }
