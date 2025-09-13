@@ -30,6 +30,6 @@ public class DiagnosisEntity {
     // 진단 결과 갱신 시 사용
     public void updateResult(String resultJson) {
         this.resultJson = resultJson;
-        this.diagnosedDate = LocalDate.now(); // 원하면 생략 가능
+        this.diagnosedDate = LocalDate.now();
     }
 }

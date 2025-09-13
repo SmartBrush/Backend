@@ -269,4 +269,90 @@ public class MainController {
             return ResponseEntity.internalServerError().body("조회 실패: " + e.getMessage());
         }
     }
+
+    @GetMapping("/main/diagnosis/average")
+    @Operation(
+            summary = "이전 3개월의 진단 결과 월별 평균",
+            description = "이번 달을 제외한 이전 3개월의 각 월별로 각 요소별 평균을 구합니다."
+    )
+    public ResponseEntity<?> getAverageByMonthForLast3Months(HttpServletRequest request) {
+        try {
+            String token = jwtProvider.resolveToken(request);
+            String email = jwtProvider.getEmail(token);
+
+            // 이번 달 제외한 3개월 기간 (예: 6월, 7월, 8월)
+            LocalDate today = LocalDate.now();
+            LocalDate startOfMonth = today.withDayOfMonth(1);
+            LocalDate startOfThreeMonthsAgo = startOfMonth.minusMonths(3);
+
+            // 진단 기록 조회
+            List<DiagnosisEntity> records = diagnosisRepository.findAllByEmailAndDiagnosedDateBetween(
+                    email, startOfThreeMonthsAgo, startOfMonth.minusDays(1) // 이번 달 제외
+            );
+
+            if (records.isEmpty()) {
+                return ResponseEntity.ok(Map.of("message", "이전 3개월 동안 진단된 결과가 없습니다."));
+            }
+
+            ObjectMapper mapper = new ObjectMapper();
+
+            // 각 월별로 값을 저장할 Map
+            Map<String, Map<String, Double>> monthlySumValues = new HashMap<>();
+            Map<String, Map<String, Integer>> monthlyCountValues = new HashMap<>();
+
+            // 각 진단 기록에서 요소별 값을 추출하여 월별로 평균 계산
+            for (DiagnosisEntity record : records) {
+                Map<String, Object> resultMap = mapper.readValue(record.getResultJson(), Map.class);
+                LocalDate diagnosedDate = record.getDiagnosedDate();
+                String monthKey = diagnosedDate.getYear() + "-" + diagnosedDate.getMonthValue(); // "2025-06"
+
+                // 각 항목별 value 값을 추출하여 평균 계산
+                for (String key : Arrays.asList("scalpSensitivity", "density", "sebumLevel", "poreSize", "scaling")) {
+                    String valueKey = key + "Value"; // 예: scalpSensitivityValue
+
+                    if (resultMap.containsKey(valueKey)) {
+                        Object value = resultMap.get(valueKey);
+
+                        // 값이 Integer일 경우 Double로 변환
+                        double numericValue = 0;
+                        if (value instanceof Integer) {
+                            numericValue = ((Integer) value).doubleValue(); // Integer를 Double로 변환
+                        } else if (value instanceof Double) {
+                            numericValue = (Double) value; // 이미 Double이면 그대로 사용
+                        }
+
+                        // 월별 sum과 count 업데이트
+                        monthlySumValues.putIfAbsent(monthKey, new HashMap<>());
+                        monthlyCountValues.putIfAbsent(monthKey, new HashMap<>());
+                        monthlySumValues.get(monthKey).put(valueKey, monthlySumValues.get(monthKey).getOrDefault(valueKey, 0.0) + numericValue);
+                        monthlyCountValues.get(monthKey).put(valueKey, monthlyCountValues.get(monthKey).getOrDefault(valueKey, 0) + 1);
+                    }
+                }
+            }
+
+            // 각 월별 평균 계산
+            Map<String, Map<String, Double>> monthlyAverages = new HashMap<>();
+            for (String monthKey : monthlySumValues.keySet()) {
+                Map<String, Double> monthSumValues = monthlySumValues.get(monthKey);
+                Map<String, Integer> monthCountValues = monthlyCountValues.get(monthKey);
+                Map<String, Double> monthAverages = new HashMap<>();
+
+                for (String key : monthSumValues.keySet()) {
+                    double sum = monthSumValues.get(key);
+                    int count = monthCountValues.get(key);
+                    double average = Math.round((sum / count) * 100.0) / 100.0;
+                    monthAverages.put(key, average);
+                }
+
+                monthlyAverages.put(monthKey, monthAverages);
+            }
+
+            return ResponseEntity.ok(monthlyAverages);
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().body("조회 실패: " + e.getMessage());
+        }
+    }
+
+
+
 }
