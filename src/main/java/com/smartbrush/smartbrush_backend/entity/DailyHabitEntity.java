@@ -14,6 +14,11 @@ import java.time.LocalDate;
 @Builder
 @Table(indexes = {
         @Index(name = "idx_dailyhabit_user_date", columnList = "user_id,habitDate")
+},uniqueConstraints = {
+        @UniqueConstraint(
+                name = "uk_user_date_cat_text",
+                columnNames = {"user_id","habitDate","category","itemText"}
+        )
 })
 public class DailyHabitEntity {
 

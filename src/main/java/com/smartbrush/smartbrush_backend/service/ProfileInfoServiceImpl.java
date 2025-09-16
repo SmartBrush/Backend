@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -21,7 +22,9 @@ public class ProfileInfoServiceImpl implements ProfileInfoService {
     @Transactional
     public UserProfileInfoResponseDTO save(AuthEntity authEntity, ProfileInfoRequestDTO request) {
         // 기존 데이터가 있다면 삭제
-        userProfileInfoRepository.deleteByAuthEntity(authEntity);
+        userProfileInfoRepository.findByAuthEntity(authEntity)
+                .ifPresent(userProfileInfoRepository::delete);
+
 
         // 새로 저장
         UserProfileInfo info = UserProfileInfo.builder()
