@@ -12,6 +12,9 @@ import org.springframework.stereotype.Service;
 
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferByte;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 
 
@@ -21,9 +24,19 @@ public class DiagnosisImageService {
 
     private final DiagnosisImageRepository diagnosisImageRepository;
 
-
+    // 오늘(KST) 찍은 사용자 사진 중 최신순 4장만 반환
     public List<DiagnosisImageEntity> selectTop4Images(String email) {
-        return diagnosisImageRepository.findTop4ByEmailOrderByCapturedAtDesc(email);
+        LocalDate today = LocalDate.now(ZoneId.of("Asia/Seoul"));
+        LocalDateTime start = today.atStartOfDay();
+        LocalDateTime end   = today.plusDays(1).atStartOfDay();
+
+        // 최근 100장 가져온 뒤, 오늘 찍은 사진만 필터링 → 상위 4장 반환
+        return diagnosisImageRepository.findTop100ByEmailOrderByCapturedAtDesc(email).stream()
+                .filter(img -> img.getCapturedAt() != null
+                        && !img.getCapturedAt().isBefore(start)
+                        && img.getCapturedAt().isBefore(end))
+                .limit(4)
+                .toList();
     }
 
     // 라플라시안 기반 선명도 계산
