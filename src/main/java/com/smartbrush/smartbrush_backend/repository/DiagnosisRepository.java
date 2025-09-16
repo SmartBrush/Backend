@@ -17,4 +17,10 @@ public interface DiagnosisRepository extends JpaRepository<DiagnosisEntity, Long
 
     // 날짜별로 모든 진단 결과 조회
     List<DiagnosisEntity> findAllByEmailAndDiagnosedDate(String email, LocalDate diagnosedDate);
+
+    // 사용자별 날짜 최신순 조회 - 출석일수 계산
+    List<DiagnosisEntity> findByEmailOrderByDiagnosedDateDesc(String email);
+
+    // 누적 출석일수
+    long countByEmail(String email);
 }

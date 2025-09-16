@@ -125,7 +125,7 @@ public class UvController {
                                     .state(uv.getState())
                                     .deviceId(uv.getDeviceId())
                                     .timestamp(uv.getTimestamp())
-                                    .userId(uv.getUser().getId()) // ✅ 여기서 사용자 ID 포함
+                                    .userId(uv.getUser().getId()) // 여기서 사용자 ID 포함
                                     .build())
                             .toList();
                     return ResponseEntity.ok(result);
