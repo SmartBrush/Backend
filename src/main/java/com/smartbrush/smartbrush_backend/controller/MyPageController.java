@@ -97,6 +97,7 @@ public class MyPageController {
                         .profileImage(c.getProfileImage())
                         .createdAt(c.getCreatedAt())
                         .isAuthor(true)
+                        .postId(c.getCommunity().getId())
                         .build())
                 .collect(Collectors.toList());
 

@@ -13,4 +13,8 @@ public interface DailyHabitRepository extends JpaRepository<DailyHabitEntity, Lo
     List<DailyHabitEntity> findByUserAndHabitDate(AuthEntity user, LocalDate habitDate);
 
     boolean existsByUserAndHabitDateAndCategory(AuthEntity user, LocalDate date, HabitCategory category);
+
+    boolean existsByUserAndHabitDateAndCategoryAndItemText(
+            AuthEntity user, LocalDate date, HabitCategory category, String itemText
+    );
 }

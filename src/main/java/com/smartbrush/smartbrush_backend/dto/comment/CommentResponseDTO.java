@@ -14,4 +14,5 @@ public class CommentResponseDTO {
     private String profileImage;
     private LocalDateTime createdAt;
     private boolean isAuthor;
+    private Long postId;
 }
