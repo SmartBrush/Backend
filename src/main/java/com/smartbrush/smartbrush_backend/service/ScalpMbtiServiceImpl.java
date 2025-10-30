@@ -92,7 +92,7 @@ public class ScalpMbtiServiceImpl {
         score.put("깔끔 지성형",     cleanO);
         score.put("밸런스형",         balance);
 
-        // 디버깅 로그 (필요 시 잠깐 활성화)
+        // 디버깅 로그
         System.out.printf(
                 "[MBTI DEBUG] I=%.2f O=%.2f S=%.2f W=%.2f midI=%.2f midO=%.2f | " +
                         "gate(storm=%s, oilySens=%s, sensDry=%s, oilyD=%s, dryD=%s, dryT=%s, cleanO=%s, balance=%s) | " +
@@ -102,14 +102,29 @@ public class ScalpMbtiServiceImpl {
                 storm, oilySens, sensDry, oilyD, dryD, dryT, cleanO, balance
         );
 
-        // 7) argmax
+        // 7) argmax (잡음 제거, 동점은 우선순위로 결정)
+        String[] priority = {
+                "트러블 폭풍형", "지성 민감형", "민감 건조형",
+                "지성 비듬형", "건조 비듬형", "건조 트러블형",
+                "깔끔 지성형", "밸런스형"
+        };
+        Map<String, Integer> pri = new LinkedHashMap<>();
+        for (int i = 0; i < priority.length; i++) pri.put(priority[i], i);
+
         String best = null;
-        double bestVal = -1e9;
-        double eps = 1e-6;
+        double bestVal = -1e18;
         for (var e : score.entrySet()) {
-            double v = e.getValue() + eps * e.getKey().hashCode();
-            if (v > bestVal) { bestVal = v; best = e.getKey(); }
+            double v = e.getValue();
+            if (v > bestVal + 1e-9) {
+                bestVal = v; best = e.getKey();
+            } else if (Math.abs(v - bestVal) <= 1e-9) {
+                if (best == null || pri.get(e.getKey()) < pri.get(best)) {
+                    best = e.getKey();
+                }
+            }
         }
+
+        System.out.println("[MBTI RETURN] " + best);
         return best;
     }
 
@@ -121,7 +136,6 @@ public class ScalpMbtiServiceImpl {
             Map<String,Object> m = parsed.get(key);
             if (m == null) return -1;
 
-            // 안전 캐스팅: Integer/Long 구분 없이 Number로 받아서 처리
             Number clsNum = (Number) m.get("class_index");
             Integer cls = (clsNum == null) ? null : clsNum.intValue();
 
@@ -147,7 +161,7 @@ public class ScalpMbtiServiceImpl {
             case 3 -> { lo = 70; hi = 90; }      // 심각
             default -> { lo = 45; hi = 60; }
         }
-        double v = lo + (c * (hi - lo));        // conf 높을수록 hi쪽
+        double v = lo + (c * (hi - lo));
         if (inverted) v = 100 - v;
         return (int)Math.round(v);
     }
