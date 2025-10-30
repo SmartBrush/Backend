@@ -336,7 +336,7 @@ public class DiagnosisController {
             int density     = ((Number) result.getOrDefault("densityValue", 55)).intValue();
             int thickness   = ((Number) result.getOrDefault("poreSizeValue", 60)).intValue();
 
-            String mbti = scalpMbtiService.getMbti(sensitivity, sebum, scaling, density, thickness);
+            String mbti = scalpMbtiService.getMbtiWithConfidence(parsed, sensitivity, sebum, scaling, density, thickness);
             result.put("scalpMbti", mbti);
 
             // 7) DB 저장(당일 한 건 유지/갱신)
@@ -399,8 +399,8 @@ public class DiagnosisController {
     }
 
     private String getStatusFromScore(double score) {
-        if (score <= 4.0) return "심각";
-        else if (score <= 6.5) return "보통";
+        if (score <= 3.0) return "심각";
+        else if (score <= 6) return "보통";
         else return "양호";
     }
 
