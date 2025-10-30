@@ -34,7 +34,7 @@ public class ScalpProfileServiceImpl {
             return ScalpMbtiSummaryDTO.builder()
                     .nickname(nickname)
                     .email(email)
-                    .scalpMbti(null)       // 진단 없음 → null
+                    .scalpMbti(null)
                     .diagnosedDate(null)
                     .build();
         }
@@ -50,7 +50,7 @@ public class ScalpProfileServiceImpl {
                 int sebum       = ((Number) result.getOrDefault("sebumLevelValue", 55)).intValue();
                 int scaling     = ((Number) result.getOrDefault("scalingValue", 55)).intValue();
                 int density     = ((Number) result.getOrDefault("densityValue", 55)).intValue();
-                int thickness   = ((Number) result.getOrDefault("poreSizeValue", 60)).intValue();
+                int thickness   = ((Number) result.getOrDefault("poreSizeValue", 60)).intValue(); // inverted 밀도 기반
 
                 Object rd = result.get("rawDiagnosis");
                 if (rd instanceof Map) {
