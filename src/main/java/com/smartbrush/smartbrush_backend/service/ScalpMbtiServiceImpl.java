@@ -8,12 +8,14 @@ import java.util.Map;
 @Service
 public class ScalpMbtiServiceImpl {
 
-    /** 새 방식: confidence까지 사용 */
+    /**
+     * 연속 스코어(0~100) + 게이트 + 가중치 기반 MBTI 산출
+     */
     public String getMbtiWithConfidence(
             Map<String, Map<String, Object>> parsed,
             int fallbackSensitivity, int fallbackSebum, int fallbackScaling, int fallbackDensity, int fallbackThickness
     ) {
-        // 1) 연속 점수 산출 (MBTI 판단에만 사용; 저장되는 값은 건드리지 않음)
+        // 1) 연속 점수 산출 (MBTI 판단 전용)
         int sens = avg(
                 cont(parsed, "모낭사이홍반", false),
                 cont(parsed, "모낭홍반농포", false)
@@ -26,14 +28,14 @@ public class ScalpMbtiServiceImpl {
         int density   = cont(parsed, "탈모", true);       // 구조 항목은 inverted
         int thickness = cont(parsed, "모발밀도", true);
 
-        // fallback: 혹시 키 누락/파싱 실패 시 기존 점수 사용
+        // 2) 폴백
         if (sens == -1) sens = fallbackSensitivity;
         if (scal == -1) scal = fallbackScaling;
         if (sebum == -1) sebum = fallbackSebum;
         if (density == -1) density = fallbackDensity;
         if (thickness == -1) thickness = fallbackThickness;
 
-        // 2) 특징 축 구성 (0~100 → 0~1)
+        // 3) 특징 축 (0~100 → 0~1)
         double irr    = (sens + scal) / 2.0;          // 자극/각질(높을수록 안좋음)
         double oil    = sebum;                         // 유분(높을수록 지성)
         double struct = (density + thickness) / 2.0;   // 구조(높을수록 좋음)
@@ -41,11 +43,14 @@ public class ScalpMbtiServiceImpl {
         double I = irr / 100.0;
         double O = oil / 100.0;
         double S = struct / 100.0;
-        double W = Math.min(1.0 - S, 0.6);            // 구조 약함의 영향 제한(최대 0.6)
+
+        // 구조 약함의 영향 상한 완화 (0.6 → 0.5)
+        double W = Math.min(1.0 - S, 0.5);
+
         double midI = 1.0 - Math.abs(I - 0.5);
         double midO = 1.0 - Math.abs(O - 0.5);
 
-        // 3) 유형별 최소조건(게이트) — 조건 불충족이면 후보에서 사실상 탈락
+        // 4) 유형별 게이트 (밸런스형 강화)
         boolean gateStorm    = (I >= 0.60) && ((O >= 0.60) || (W >= 0.40));
         boolean gateOilySens = (I >= 0.60) && (O >= 0.60);
         boolean gateSensDry  = (I >= 0.60) && (O <= 0.45) && (W >= 0.30);
@@ -53,10 +58,10 @@ public class ScalpMbtiServiceImpl {
         boolean gateDryD     = (O <= 0.45) && (I >= 0.55) && (W >= 0.30);
         boolean gateDryT     = (I >= 0.55) && (O <= 0.55) && (W >= 0.35);
         boolean gateCleanO   = (O >= 0.65) && (I <= 0.45) && (W <= 0.25) && (S >= 0.55);
-        // 밸런스형: 진짜 중간(I,O≈0.5) + 구조 양호(S≥0.60)일 때만
-        boolean gateBalance  = (Math.abs(I - 0.5) <= 0.12) && (Math.abs(O - 0.5) <= 0.12) && (S >= 0.60);
+        // 밸런스형: 중간값 근접성을 더 엄격하게, 구조도 더 좋아야 통과
+        boolean gateBalance  = (Math.abs(I - 0.5) <= 0.08) && (Math.abs(O - 0.5) <= 0.08) && (S >= 0.65);
 
-        // 4) 유형별 원점수 (보정된 가중치)
+        // 5) 유형별 원점수 (S 가중치 완화)
         double storm    = 0.45*I + 0.25*O + 0.25*W + 0.05*midO;             // 트러블 폭풍형
         double oilySens = 0.45*I + 0.40*O + 0.10*(1.0 - W) + 0.05*midO;     // 지성 민감형
         double sensDry  = 0.52*I + 0.06*O + 0.32*W + 0.10*midI;             // 민감 건조형
@@ -64,10 +69,10 @@ public class ScalpMbtiServiceImpl {
         double dryD     = 0.38*I + 0.10*O + 0.42*W + 0.10*midI;             // 건조 비듬형
         double dryT     = 0.48*I + 0.10*O + 0.32*W + 0.10*midI;             // 건조 트러블형
         double cleanO   = -0.12*I + 0.68*O + (W >= 0.40 ? 0.0 : 0.32*S);    // 깔끔 지성형
-        // 밸런스형: ‘중간’에서 멀어질수록 큰 패널티, 구조 보너스 강화
-        double balance  = 0.22*midI + 0.22*midO + 0.52*S - 0.22*(Math.abs(I - 0.5) + Math.abs(O - 0.5));
+        // 밸런스형 구조 보너스 0.52 → 0.40
+        double balance  = 0.24*midI + 0.24*midO + 0.40*S - 0.22*(Math.abs(I - 0.5) + Math.abs(O - 0.5));
 
-        // 5) 게이트 적용 — 미충족이면 강등
+        // 6) 게이트 미충족 시 강등
         if (!gateStorm)    storm    -= 1.0;
         if (!gateOilySens) oilySens -= 1.0;
         if (!gateSensDry)  sensDry  -= 1.0;
@@ -87,7 +92,17 @@ public class ScalpMbtiServiceImpl {
         score.put("깔끔 지성형",     cleanO);
         score.put("밸런스형",         balance);
 
-        // 7) argmax (동점 방지 미세 잡음)
+        // 디버깅 로그 (필요 시 잠깐 활성화)
+        System.out.printf(
+                "[MBTI DEBUG] I=%.2f O=%.2f S=%.2f W=%.2f midI=%.2f midO=%.2f | " +
+                        "gate(storm=%s, oilySens=%s, sensDry=%s, oilyD=%s, dryD=%s, dryT=%s, cleanO=%s, balance=%s) | " +
+                        "score(storm=%.3f, oilySens=%.3f, sensDry=%.3f, oilyD=%.3f, dryD=%.3f, dryT=%.3f, cleanO=%.3f, balance=%.3f)%n",
+                I, O, S, W, midI, midO,
+                gateStorm, gateOilySens, gateSensDry, gateOilyD, gateDryD, gateDryT, gateCleanO, gateBalance,
+                storm, oilySens, sensDry, oilyD, dryD, dryT, cleanO, balance
+        );
+
+        // 7) argmax
         String best = null;
         double bestVal = -1e9;
         double eps = 1e-6;
@@ -105,17 +120,22 @@ public class ScalpMbtiServiceImpl {
         try {
             Map<String,Object> m = parsed.get(key);
             if (m == null) return -1;
-            Integer cls = (Integer) m.get("class_index");
+
+            // 안전 캐스팅: Integer/Long 구분 없이 Number로 받아서 처리
+            Number clsNum = (Number) m.get("class_index");
+            Integer cls = (clsNum == null) ? null : clsNum.intValue();
+
             Double conf = null;
             Object cObj = m.get("confidence");
             if (cObj instanceof Number n) conf = n.doubleValue();
+
             return continuousScore(cls, conf, inverted);
         } catch (Exception e) {
             return -1;
         }
     }
 
-    /** 연속 스코어링: class_index 구간 + confidence로 보간 */
+    /** 연속 스코어링: class_index 구간 + confidence 보간 */
     private int continuousScore(Integer cls, Double conf, boolean inverted) {
         if (cls == null) return 55;
         double c = (conf == null) ? 0.5 : Math.max(0, Math.min(1, conf));
