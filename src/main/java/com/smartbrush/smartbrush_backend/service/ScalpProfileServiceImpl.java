@@ -50,23 +50,11 @@ public class ScalpProfileServiceImpl {
                 int sebum       = ((Number) result.getOrDefault("sebumLevelValue", 55)).intValue();
                 int scaling     = ((Number) result.getOrDefault("scalingValue", 55)).intValue();
                 int density     = ((Number) result.getOrDefault("densityValue", 55)).intValue();
-                int thickness   = ((Number) result.getOrDefault("poreSizeValue", 60)).intValue(); // inverted 밀도 기반
+                int thickness   = ((Number) result.getOrDefault("poreSizeValue", 60)).intValue();
 
-                Object rd = result.get("rawDiagnosis");
-                if (rd instanceof Map) {
-                    @SuppressWarnings("unchecked")
-                    Map<String, Map<String, Object>> parsed = (Map<String, Map<String, Object>>) rd;
-                    mbti = scalpMbtiService.getMbtiWithConfidence(
-                            parsed, sensitivity, sebum, scaling, density, thickness
-                    );
-                } else {
-                    // rawDiagnosis가 없던 과거 데이터 대비 안전 폴백
-                    mbti = scalpMbtiService.getMbtiWithConfidence(
-                            Map.of(), sensitivity, sebum, scaling, density, thickness
-                    );
-                }
+                mbti = scalpMbtiService.getMbti(sensitivity, sebum, scaling, density, thickness);
 
-                if (backfillIfMissing && mbti != null && !mbti.isBlank()) {
+                if (backfillIfMissing) {
                     result.put("scalpMbti", mbti);
                     dx.updateResult(om.writeValueAsString(result));
                     diagnosisRepository.save(dx);
