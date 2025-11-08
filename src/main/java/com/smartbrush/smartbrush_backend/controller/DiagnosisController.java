@@ -107,14 +107,21 @@ public class DiagnosisController {
             // 6) 점수/라벨 계산 + MBTI
             Map<String, Object> result = calculateDiagnosisResult(parsed);
 
-            int sensitivity = ((Number) result.getOrDefault("scalpSensitivityValue", 55)).intValue();
-            int sebum       = ((Number) result.getOrDefault("sebumLevelValue", 55)).intValue();
-            int scaling     = ((Number) result.getOrDefault("scalingValue", 55)).intValue();
-            int density     = ((Number) result.getOrDefault("densityValue", 55)).intValue();
-            int thickness   = ((Number) result.getOrDefault("poreSizeValue", 60)).intValue();
+            // class_index(평균) 확보
+            Integer sens = avgIdx(
+                    (Integer) parsed.getOrDefault("모낭사이홍반", Map.of()).get("class_index"),
+                    (Integer) parsed.getOrDefault("모낭홍반농포", Map.of()).get("class_index")
+            );
+            Integer scaling = avgIdx(
+                    (Integer) parsed.getOrDefault("미세각질", Map.of()).get("class_index"),
+                    (Integer) parsed.getOrDefault("비듬", Map.of()).get("class_index")
+            );
+            Integer sebum = (Integer) parsed.getOrDefault("피지과다", Map.of()).get("class_index");
 
-            String mbti = scalpMbtiService.getMbti(sensitivity, sebum, scaling, density, thickness);
+            // MBTI 결정 (class_index 직결)
+            String mbti = scalpMbtiService.getMbti(sens, sebum, scaling);
             result.put("scalpMbti", mbti);
+
 
             // 7) DB 저장(당일 한 건 유지/갱신)
             String jsonString = objectMapper.writeValueAsString(result);
@@ -173,6 +180,13 @@ public class DiagnosisController {
         int sum = 0, count = 0;
         for (Integer v : values) if (v != null) { sum += v; count++; }
         return count == 0 ? 55 : Math.round((float) sum / count);
+    }
+
+    private Integer avgIdx(Integer a, Integer b) {
+        if (a == null && b == null) return null;
+        if (a == null) return b;
+        if (b == null) return a;
+        return (int) Math.round((a + b) / 2.0);
     }
 
     private String getStatusFromScore(double score) {
