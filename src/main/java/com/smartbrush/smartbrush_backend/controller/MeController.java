@@ -28,7 +28,7 @@ public class MeController {
         }
         String email = jwtProvider.getEmail(token);
 
-        ScalpMbtiSummaryDTO dto = scalpProfileService.getSummary(email, true);
+        ScalpMbtiSummaryDTO dto = scalpProfileService.getSummary(email);
         return ResponseEntity.ok(dto);
     }
 }
