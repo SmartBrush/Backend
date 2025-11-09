@@ -155,7 +155,39 @@ public class DiagnosisController {
         return null;
     }
 
-    // ===== 점수/라벨 산출 유틸 =====
+    // ===== 점수/라벨 산출 =====
+    private int getDetailedScore(Integer a, Integer b, String type) {
+        if (a == null || b == null) return 55;
+
+        // 0~3 범위 보정
+        a = Math.max(0, Math.min(3, a));
+        b = Math.max(0, Math.min(3, b));
+
+        // 조합별 점수 매핑
+        Map<String, Integer> sensitivityMap = Map.ofEntries(
+                Map.entry("0,0", 30), Map.entry("0,1", 35), Map.entry("0,2", 40), Map.entry("0,3", 45),
+                Map.entry("1,0", 40), Map.entry("1,1", 45), Map.entry("1,2", 50), Map.entry("1,3", 55),
+                Map.entry("2,0", 50), Map.entry("2,1", 55), Map.entry("2,2", 60), Map.entry("2,3", 65),
+                Map.entry("3,0", 60), Map.entry("3,1", 65), Map.entry("3,2", 70), Map.entry("3,3", 80)
+        );
+
+        Map<String, Integer> scalingMap = Map.ofEntries(
+                Map.entry("0,0", 30), Map.entry("0,1", 33), Map.entry("0,2", 36), Map.entry("0,3", 40),
+                Map.entry("1,0", 38), Map.entry("1,1", 42), Map.entry("1,2", 48), Map.entry("1,3", 52),
+                Map.entry("2,0", 50), Map.entry("2,1", 55), Map.entry("2,2", 60), Map.entry("2,3", 65),
+                Map.entry("3,0", 60), Map.entry("3,1", 66), Map.entry("3,2", 72), Map.entry("3,3", 80)
+        );
+
+        String key = a + "," + b;
+
+        if (type.equals("sensitivity")) {
+            return sensitivityMap.getOrDefault(key, 55);
+        } else if (type.equals("scaling")) {
+            return scalingMap.getOrDefault(key, 55);
+        }
+        return 55;
+    }
+
     private int getScoreFromClassIndex(Integer classIndex) {
         if (classIndex == null) return 55;
         return switch (classIndex) {
@@ -207,26 +239,26 @@ public class DiagnosisController {
 
     /** Flask 평균 결과 → 최종 지표/라벨/점수 변환 */
     private Map<String, Object> calculateDiagnosisResult(Map<String, Map<String, Object>> parsed) {
-        Integer 민감도 = average(
-                (Integer) parsed.getOrDefault("모낭사이홍반", Map.of()).get("class_index"),
-                (Integer) parsed.getOrDefault("모낭홍반농포", Map.of()).get("class_index")
-        );
-
-        Integer 각질 = average(
-                (Integer) parsed.getOrDefault("미세각질", Map.of()).get("class_index"),
-                (Integer) parsed.getOrDefault("비듬", Map.of()).get("class_index")
-        );
-
+        Integer 모낭사이홍반 = (Integer) parsed.getOrDefault("모낭사이홍반", Map.of()).get("class_index");
+        Integer 모낭홍반농포 = (Integer) parsed.getOrDefault("모낭홍반농포", Map.of()).get("class_index");
+        Integer 미세각질 = (Integer) parsed.getOrDefault("미세각질", Map.of()).get("class_index");
+        Integer 비듬 = (Integer) parsed.getOrDefault("비듬", Map.of()).get("class_index");
         Integer 탈모 = (Integer) parsed.getOrDefault("탈모", Map.of()).get("class_index");
         Integer 피지 = (Integer) parsed.getOrDefault("피지과다", Map.of()).get("class_index");
         Integer 모발밀도 = (Integer) parsed.getOrDefault("모발밀도", Map.of()).get("class_index");
 
-        int scalpSensitivityValue = getScoreFromClassIndex(민감도);
-        int scalingValue          = getScoreFromClassIndex(각질);
+        // 평균 class_index
+        Integer 민감도 = average(모낭사이홍반, 모낭홍반농포);
+        Integer 각질 = average(미세각질, 비듬);
+
+        // 세분화 점수 (16조합용)
+        int scalpSensitivityValue = getDetailedScore(모낭사이홍반, 모낭홍반농포, "sensitivity");
+        int scalingValue          = getDetailedScore(미세각질, 비듬, "scaling");
         int densityValue          = getInvertedScoreFromClassIndex(탈모);
         int sebumLevelValue       = getScoreFromClassIndex(피지);
         int poreSizeValue         = getInvertedScoreFromClassIndex(모발밀도);
 
+        // 이하 동일
         int goodSensitivity = 100 - scalpSensitivityValue;
         int goodScaling     = 100 - scalingValue;
         int goodSebum       = 100 - sebumLevelValue;
@@ -238,19 +270,14 @@ public class DiagnosisController {
         Map<String, Object> result = new HashMap<>();
         result.put("scalpSensitivityValue", scalpSensitivityValue);
         result.put("scalpSensitivityLevel", getLabelFromScore(scalpSensitivityValue, "sensitivity"));
-
         result.put("densityValue", densityValue);
         result.put("densityLevel", getLabelFromScore(densityValue, "density"));
-
         result.put("sebumLevelValue", sebumLevelValue);
         result.put("sebumLevel", getLabelFromScore(sebumLevelValue, "sebum"));
-
         result.put("poreSizeValue", poreSizeValue);
         result.put("poreSizeLevel", getLabelFromScore(poreSizeValue, "thickness"));
-
         result.put("scalingValue", scalingValue);
         result.put("scalingLevel", getLabelFromScore(scalingValue, "scaling"));
-
         result.put("score", score);
         result.put("status", status);
         result.put("rawDiagnosis", parsed);
